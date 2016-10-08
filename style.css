@@ -1,4 +1,17 @@
-body
+html, body 
 {
-	background-color: blue;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.navigation
+{
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+.home_text
+{
+    margin-top:100px;
+    margin-left:40px;
 }
