@@ -6,12 +6,25 @@ html, body
 
 .navigation
 {
+    width: auto;
     margin-top: 50px;
     font-size: 36px;
 }
 
 .home_text
 {
-    margin-top:100px;
-    margin-left:40px;
+    width:200px;
+    height: 100px;
+    margin-top:200px;
+    margin-left:300px;
+}
+
+.icons
+{
+   margin-top: 300px;
+}
+
+.fa-behance
+{
+    margin-left: 10px;
 }
