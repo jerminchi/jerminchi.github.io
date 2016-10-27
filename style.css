@@ -4,27 +4,39 @@ html, body
     overflow-x: hidden;
 }
 
-.navigation
+body
 {
-    width: auto;
-    margin-top: 50px;
-    font-size: 36px;
+    
 }
 
-.home_text
+#navigation
 {
-    width:200px;
-    height: 100px;
-    margin-top:200px;
-    margin-left:300px;
+    float: right;
+    white-space: nowrap;
 }
 
-.icons
+#navigation li
 {
-   margin-top: 300px;
+    font-size: 16px;
+    list-style: none;
+    display: inline-block;
 }
 
-.fa-behance
+#home-text
 {
-    margin-left: 10px;
+    font-size: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: table;
+    height:200px;
+} 
+
+
+.second-text
+{
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: table;
 }
