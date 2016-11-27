@@ -25,7 +25,7 @@ if ($mail_status) { ?>
 else { ?>
 	<script language="javascript" type="text/javascript">
 		alert('Message failed. Please, try again');
-		window.location = 'contact9.html';
+		window.location = 'contact.html';
 	</script>
 <?php
 }
