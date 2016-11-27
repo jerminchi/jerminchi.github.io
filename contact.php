@@ -18,14 +18,14 @@ $mail_status = mail($mail_to, $subject, $body_message, $headers);
 if ($mail_status) { ?>
 	<script language="javascript" type="text/javascript">
 		alert('Message sent');
-		window.location = 'contact.html';
+		window.location = 'contact.php';
 	</script>
 <?php
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
 		alert('Message failed. Please, try again');
-		window.location = 'contact.html';
+		window.location = 'contact.php';
 	</script>
 <?php
 }
