@@ -1,6 +1,5 @@
 /**************************
        CSS Reset
- 
 ***************************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,6 +53,7 @@ table {
 
 section .first_page{
     display:flex;
+    flex-direction: column;
     background-color:#0097A7;
     align-items: center;
     height:675px;
@@ -62,14 +62,67 @@ section .first_page{
     
 }
 .first_page h1{
-    margin: 0 0 0 100px;
+    margin: 4.5em 0 0 2em;
     font-size:55px;
     color:white;
     letter-spacing: -.16362rem
     line-height: 80px;
-    font-weight:bgold;
-
-
+    font-weight:bold;
 }
 
-section .secondpage
+.first_page p{
+    color:#80DEEA;
+    margin: 2em 0 0 6.4em;
+    align-self:flex-start;
+}
+
+
+section .work_page{
+    
+    display:flex;
+    flex-direction:column;
+    background-color:#00ACC1;
+    height:675px;
+}
+
+.work_page h1{
+    
+    align-self:center;
+    margin: 1em 0 0 0;
+    font-size:1.5em;
+    font-weight: bold;
+    color:white;
+}
+
+.first_project, .second_project, .third_project, .fourth_project{
+    
+    align-self: center;
+    margin: 2.3em 0 0 3em;
+    width:20em;
+    border-width: medium;
+    border-style: dotted;
+    border-color:#0277BD;
+    padding: 1em 1em 1em 1em;
+}
+
+.first_project:hover,.second_project:hover, .third_project:hover, .fourth_project:hover{
+    
+   background-color:#0277BD;
+   box-shadow: 10px 10px 5px #01579B;
+}
+
+.first_project h2,.second_project h2, .third_project h2, .fourth_project h2{
+    font-size:3em;
+    font-weight:bold;
+    color:white;
+    text-align: center;
+    margin: 0 0 0.2em 0;    
+}
+
+.first_project p,.second_project p, .third_project p, .fourth_project p{
+    
+    font-size:0.8em;
+    text-align: center;
+    color:white;
+}
+
