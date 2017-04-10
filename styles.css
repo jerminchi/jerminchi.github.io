@@ -51,38 +51,103 @@ table {
               CSS for my pages
 **********************************************/
 
-section .first_page{
+body{
+
     display:flex;
     flex-direction: column;
-    background-color:#0097A7;
+}
+
+/**********************************
+        First Page Styles
+***********************************/
+
+.first-page{
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    height:675px;
+    background-color:#0097A7;
+    height:550px;
     
 
     
 }
-.first_page h1{
-    margin: 4.5em 0 0 2em;
-    font-size:55px;
-    color:white;
-    letter-spacing: -.16362rem
-    line-height: 80px;
-    font-weight:bold;
+.first-page img{
+    
+    margin: 2em 0 0 0;
+    border: 10px solid white;
+    border-radius: 15%;
 }
 
-.first_page p{
+.first-page p{
+
+    align-self: center;
     color:#80DEEA;
-    margin: 2em 0 0 6.4em;
-    align-self:flex-start;
+    margin: 1em 0 0 0;
 }
 
+.social-links{
 
-section .work_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5em 0 0 0;
+}
+
+.social-links a:nth-child(1){
+
+    color:#FE1C5D;
+    margin-right:0.5em;
+
+
+}
+
+.social-links a:nth-child(2){
+
+    color:#FE1C5D;
+    margin-right:0.5em;
+
+}
+
+.social-links a:nth-child(3){
+
+    color:#FE1C5D;
+
+}
+
+@keyframes blink{
+
+    0%{
+        color:#0097A7;
+
+        
+    }
+
+    100%{
+
+       color:#80DEEA;
+    }
+}
+
+.indicator{
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    font-size: 50px;
+    margin: 3em 0 0 0;
+    color: #80DEEA;
+}
+/**********************************
+       End First Page Styles
+***********************************/
+
+
+.projects{
     
     display:flex;
     flex-direction:column;
     background-color:#00ACC1;
-    height:675px;
+    height:550px;
 }
 
 .work_page h1{
@@ -125,4 +190,5 @@ section .work_page{
     text-align: center;
     color:white;
 }
+
 
