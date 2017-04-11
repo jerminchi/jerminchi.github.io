@@ -241,13 +241,15 @@ body{
 .first_project button,.second_project button, .third_project button, .fourth_project button{
   
     align-self: center;
+    border:none;
+    padding:0.5em;
+    width:50%;
     font-weight:bold;
     color:white;
     text-align: center;  
     background-color:#FE1C5D;
-    border:none;
-    padding:0.5em;
-    width:50%;
+    box-shadow: 3px 3px 3px #700b27;
+   
 }
 
 .first_project:hover,.second_project:hover, .third_project:hover, .fourth_project:hover{
@@ -288,7 +290,7 @@ body{
     background-color:#FE1C5D;
     text-align: center;
     margin-right:0.5em;
-     box-shadow: 3px 3px 3px #700b27;
+    box-shadow: 3px 3px 3px #700b27;
 }
 
 
