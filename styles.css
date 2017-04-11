@@ -66,16 +66,55 @@ body{
     flex-direction: column;
     align-items: center;
     background-color:#0097A7;
-    height:550px;
-    
-
+    height:500px;
     
 }
-.first-page img{
-    
+
+@keyframes colors{
+
+    0%{
+
+        border-color:white;
+    }
+
+    25%{
+
+        border-color:#0097A7;
+    }
+
+    50%{
+
+       border-color: #FE1C5D;
+        
+    }
+
+    75%{
+
+        border-color:#0097A7;
+    }
+
+    100%{
+
+        border-color:lime;
+        
+    }
+}
+.first-page h1{
+
+    color:white;
     margin: 2em 0 0 0;
-    border: 10px solid white;
-    border-radius: 15%;
+    font-weight: 700;
+    font-size:40px;
+    padding:1em;
+    border: 5px double white;
+    text-align: center;
+
+
+    animation-name: colors;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
 }
 
 .first-page p{
@@ -90,7 +129,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0.5em 0 0 0;
+    margin: 1em 0 0 0;
 }
 
 .social-links a:nth-child(1){
@@ -134,38 +173,50 @@ body{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     font-size: 50px;
-    margin: 3em 0 0 0;
+    margin: 2em 0 0 0;
     color: #80DEEA;
+}
+
+.indicator p{
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+
+    margin: 0 0 0.5em 0;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
 }
 /**********************************
        End First Page Styles
 ***********************************/
 
 
+/**********************************
+       Projects Styles
+***********************************/
+
+
 .projects{
     
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color:#00ACC1;
-    height:550px;
+    height:350px;
 }
 
-.work_page h1{
-    
-    align-self:center;
-    margin: 1em 0 0 0;
-    font-size:1.5em;
-    font-weight: bold;
-    color:white;
-}
 
 .first_project, .second_project, .third_project, .fourth_project{
     
-    align-self: center;
+    width:150px;
+    height:150px;
     margin: 2.3em 0 0 3em;
-    width:20em;
     border-width: medium;
-    border-style: dotted;
+    border-style: double;
     border-color:#0277BD;
     padding: 1em 1em 1em 1em;
 }
@@ -190,5 +241,9 @@ body{
     text-align: center;
     color:white;
 }
+
+/**********************************
+       End Project Styles
+***********************************/
 
 
