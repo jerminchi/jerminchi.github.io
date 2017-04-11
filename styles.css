@@ -183,7 +183,6 @@ body{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-delay: 0.5s;
-
     margin: 0 0 0.5em 0;
     font-size: 16px;
     text-align: center;
@@ -206,12 +205,15 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     background-color:#00ACC1;
-    height:350px;
+  
 }
 
 
 .first_project, .second_project, .third_project, .fourth_project{
-    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width:150px;
     height:150px;
     margin: 2.3em 0 0 3em;
@@ -221,18 +223,12 @@ body{
     padding: 1em 1em 1em 1em;
 }
 
-.first_project:hover,.second_project:hover, .third_project:hover, .fourth_project:hover{
-    
-   background-color:#0277BD;
-   box-shadow: 10px 10px 5px #01579B;
-}
 
-.first_project h2,.second_project h2, .third_project h2, .fourth_project h2{
-    font-size:3em;
+.first_project h3,.second_project h3, .third_project h3, .fourth_project h3{
+  
     font-weight:bold;
     color:white;
-    text-align: center;
-    margin: 0 0 0.2em 0;    
+    text-align: center;  
 }
 
 .first_project p,.second_project p, .third_project p, .fourth_project p{
@@ -241,6 +237,60 @@ body{
     text-align: center;
     color:white;
 }
+
+.first_project button,.second_project button, .third_project button, .fourth_project button{
+  
+    align-self: center;
+    font-weight:bold;
+    color:white;
+    text-align: center;  
+    background-color:#FE1C5D;
+    border:none;
+    padding:0.5em;
+    width:50%;
+}
+
+.first_project:hover,.second_project:hover, .third_project:hover, .fourth_project:hover{
+    
+   background-color:#0277BD;
+   box-shadow: 10px 10px 5px #01579B;
+}   
+
+.techs{
+
+   display:flex;
+   flex-direction: row; 
+   justify-content: center;
+}
+
+.techs p:nth-child(1){
+
+    flex-wrap: wrap;
+    background-color:#FE1C5D;
+    text-align: center;
+    margin-right:0.5em;
+    box-shadow: 3px 3px 3px #700b27;
+    
+}
+
+.techs p:nth-child(2){
+
+    flex-wrap: wrap;
+    background-color:#FE1C5D;
+    text-align: center;
+    margin-right:0.5em;
+     box-shadow: 3px 3px 3px #700b27;
+}
+
+.techs p:nth-child(3){
+
+    flex-wrap: wrap;
+    background-color:#FE1C5D;
+    text-align: center;
+    margin-right:0.5em;
+     box-shadow: 3px 3px 3px #700b27;
+}
+
 
 /**********************************
        End Project Styles
