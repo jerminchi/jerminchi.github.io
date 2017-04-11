@@ -56,7 +56,8 @@ button::-moz-focus-inner { border: 0; }
 body{
 
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /**********************************
@@ -68,7 +69,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color:#0097A7;
-    height:500px;
+    
     
 }
 
@@ -204,9 +205,11 @@ body{
     
     display:flex;
     flex-direction:row;
+    align-content: center;
     justify-content: center;
     flex-wrap: wrap;
     background-color:#00ACC1;
+    width:840px;
   
 }
 
