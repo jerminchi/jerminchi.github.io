@@ -253,9 +253,7 @@ body{
      background-color:#FE1C5D;
      box-shadow: 3px 3px 3px #700b27;
     
-       
 }
-
 
 
 .first_project button,.second_project button, .third_project button, .fourth_project button{
@@ -263,10 +261,7 @@ body{
     border:none;
     font-weight:bold;
     background-color:#FE1C5D;
-    color:white;
-    
-   
-       
+    color:white;      
 }
 
 .first_project:hover,.second_project:hover, .third_project:hover, .fourth_project:hover{
