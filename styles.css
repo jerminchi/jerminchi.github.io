@@ -209,7 +209,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     background-color:#00ACC1;
-    width:840px;
+    width:845px;
   
 }
 
@@ -221,7 +221,7 @@ body{
     justify-content: center;
     width:150px;
     height:150px;
-    margin: 2.3em 0 0 0;
+    /*margin: 2.3em 0 0 0;*/
     border-width: medium;
     border-style: double;
     border-color:#0277BD;
@@ -296,7 +296,7 @@ body{
     background-color:#FE1C5D;
     text-align: center;
     margin-right:0.5em;
-     box-shadow: 3px 3px 3px #700b27;
+    box-shadow: 3px 3px 3px #700b27;
 }
 
 .techs p:nth-child(3){
@@ -312,5 +312,25 @@ body{
 /**********************************
        End Project Styles
 ***********************************/
+
+
+/**********************************
+       Third Page Styles
+***********************************/
+
+
+.third_page{
+
+    display:flex;
+    flex-direction: row;
+    background-color:lime;
+    height:300px;
+    width:1400px;
+}
+
+/**********************************
+       End Third Page Styles
+***********************************/
+
 
 
