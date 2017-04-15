@@ -56,8 +56,7 @@ button::-moz-focus-inner { border: 0; }
 body{
 
     display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 /**********************************
@@ -68,12 +67,13 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color:#0097A7;
-
+    background-color:#6A412F;
+    height:675px;
+    flex-shrink: 1;
     flex-grow: 1;
-    
-    
 }
+
+
 
 @keyframes colors{
 
@@ -107,12 +107,14 @@ body{
 .first-page h1{
 
     color:white;
-    margin: 2em 0 0 0;
     font-weight: 700;
-    font-size:40px;
+  font-family: 'Proza Libre', sans-serif;
+    font-size:28px;
     padding:1em;
-    border: 5px double white;
+    border: 15px double white;
     text-align: center;
+    margin-top:0.7em;
+    line-height:120%;
 
 
     animation-name: colors;
@@ -127,6 +129,9 @@ body{
     align-self: center;
     color:#80DEEA;
     margin: 1em 0 0 0;
+    font-family: 'Proza Libre', sans-serif;
+    font-size:36px;
+    text-align: center;
 }
 
 .social-links{
@@ -139,7 +144,7 @@ body{
 
 .social-links a:nth-child(1){
 
-    color:#FE1C5D;
+    color:#80DEEA;
     margin-right:0.5em;
 
 
@@ -147,14 +152,14 @@ body{
 
 .social-links a:nth-child(2){
 
-    color:#FE1C5D;
+    color:#80DEEA;
     margin-right:0.5em;
 
 }
 
 .social-links a:nth-child(3){
 
-    color:#FE1C5D;
+    color:#80DEEA;
 
 }
 
@@ -178,7 +183,7 @@ body{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     font-size: 50px;
-    margin: 2em 0 0 0;
+    margin: 1.2em 0 0 0;
     color: #80DEEA;
 }
 
@@ -189,6 +194,7 @@ body{
     animation-iteration-count: infinite;
     animation-delay: 0.5s;
     margin: 0 0 0.5em 0;
+        font-family: 'Proza Libre', sans-serif;
     font-size: 16px;
     text-align: center;
     font-weight: bold;
@@ -211,8 +217,10 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     flex-grow: 1;
-    background-color:#00ACC1;
-    width:845px;
+    flex-shrink: 1;
+    /*background-color:#00ACC1;*/
+    background-color:#88543A;
+   
   
 }
 
@@ -327,10 +335,11 @@ body{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap; 
+    flex-shrink: 1;
     align-content: center;
     justify-content: space-around;
-    background-color:#FE1C5D;
-    width:1400px;
+    /*background-color:#FE1C5D;*/
+    background-color:#C46C1B;
 }
 
 
@@ -371,8 +380,11 @@ body{
     word-wrap: break-word;
 }
 
+.skill-one:hover, .skill-two:hover, .skill-three:hover{
 
-
+    background-color:#700b27;
+   box-shadow: 10px 10px 5px #700b27;
+} 
 
 
 /**********************************
