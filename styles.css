@@ -73,6 +73,12 @@ body{
     flex-grow: 1;
 }
 
+.info{
+
+    display:flex;
+    flex-direction: row;
+}
+
 
 
 @keyframes colors{
@@ -126,11 +132,11 @@ body{
 
 .first-page p{
 
-    align-self: center;
+    align-self: flex-start;
     color:#80DEEA;
     margin: 1em 0 0 0;
     font-family: 'Proza Libre', sans-serif;
-    font-size:36px;
+    font-size:20px;
     text-align: center;
 }
 
