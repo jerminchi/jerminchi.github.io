@@ -1,7 +1,7 @@
 /**************************
        CSS Reset
 ***************************/
-html, body, div, span, applet, object, iframe,
+html, body, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -59,61 +59,46 @@ body{
     flex-direction: column;
 }
 
-/**********************************
-        First Page Styles
-***********************************/
-
-.first-page{
-    display:flex;
-    flex-direction: column;
-    height:675px;
-    flex-shrink: 1;
-    flex-grow: 1;
-}
-
-.first-heading{
-
-    display:flex;
-    flex-direction: row;
+.main {
+  display: flex;
+  flex-direction: column;
 }
 
 
+.heading h1{
 
-
-.first-page h1{
-
-    
+    align-self: flex-start;
     color: #282828;
-    margin:3em;
+    margin:3em 3em 0 3em;
     font-family: 'Candal', sans-serif;
     font-weight: 700;
-    font-size:35px;
+    font-size:30px;
     text-align: left;
     line-height: 120%;
-}
+    flex-wrap: wrap;
 
- #sidebar {
-     align-self: flex-end;
-     position: fixed;
-     margin:1.5em 1.5em 0 0;    
-     width: 200px;
-     height: 561px;
-     border-left: 1px solid #dbdbdb;
- }
+}
+.sidebar{
+
+       border-left: 1px solid #dbdbdb;
+       margin-right:5em;
+       margin-top:3em;
+}
 
  .statements{
 
      margin: 1.5em  0 0 1.5em;
-     color:#282828;
-    font-family: 'Lekton', sans-serif;
+     color:#353535;
+    font-family: 'Khula', sans-serif;
      font-size: 12px;
- }
 
- .statements ul li{
+ }  
+
+ .links li{
 
      margin:0 0 0 1.5em;  
     line-height: 150%;
-     list-style: square;
+    list-style: square;
  }
 
  a { 
@@ -124,26 +109,125 @@ body{
 
 
 
-.social-links a:nth-child(1){
+@media screen and (min-width: 600px) {
+  .main {
+    flex-direction: row-reverse;
+  }
 
-    color:#80DEEA;
-    margin-right:0.5em;
+  .main-content {
+    flex: 1;
+  }
 
+  .sidebar {
+    width: 180px;
+  }
+}
+
+.projects{
+
+    display:flex;
+
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************
+        First Page Styles
+***********************************/
+
+/*.first-page{
+    display:flex;
+    flex-direction: row;
+    height:675px; 
 
 }
 
-.social-links a:nth-child(2){
+.heading{
 
-    color:#80DEEA;
-    margin-right:0.5em;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.heading h1{
+
+ 
+    color: #282828;
+    margin:3em 3em 0 3em;
+    font-family: 'Candal', sans-serif;
+    font-weight: 700;
+    font-size:35px;
+    text-align: left;
+    line-height: 120%;
+     
 
 }
 
-.social-links a:nth-child(3){
+.heading p{
 
-    color:#80DEEA;
-
+    margin:3em 0 0 6em;
+    color:#353535;
+    font-family: 'Khula', sans-serif;
+    font-size:18px;
+   
 }
+
+
+
+ #sidebar {
+     display: flex;
+     flex-direction: column;  
+     align-self: flex-start;  
+     width: 180px;
+     border-left: 1px solid #dbdbdb;
+     margin: 1.5em 0 0 15em;
+      
+ }
+
+
+
+ .statements{
+
+     margin: 1.5em  0 0 1.5em;
+     color:#353535;
+    font-family: 'Khula', sans-serif;
+     font-size: 12px;
+
+ }  
+
+ .links li{
+
+     margin:0 0 0 1.5em;  
+    line-height: 150%;
+ }
+
+ a { 
+     color: inherit;
+     text-decoration: none;
+     outline: none; 
+     } */
+
 
 /**********************************
        End First Page Styles
@@ -155,21 +239,13 @@ body{
 ***********************************/
 
 
-.projects{
+/*.projects{
     
     display:flex;
-    flex-direction:row;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
-    /*background-color:#00ACC1;*/
-    background-color:#88543A;
-   
+    flex-direction:column;
+    flex-wrap: wrap;   
   
 }
-
 
 .first_project, .second_project, .third_project, .fourth_project{
 
@@ -178,29 +254,27 @@ body{
     justify-content: center;
     width:150px;
     height:150px;
-    /*margin: 2.3em 0 0 0;*/
     border-width: medium;
     border-style: double;
     border-color:#0277BD;
     padding: 1em 1em 1em 1em;
-}
+}*/
 
-
+/*
 .first_project h3,.second_project h3, .third_project h3, .fourth_project h3{
   
     font-weight:bold;
     color:white;
     text-align: center;  
-}
-
+}*/
+/*
 .first_project p,.second_project p, .third_project p, .fourth_project p{
     
     font-size:0.8em;
     text-align: center;
     color:white;
-}
-
-
+}*/
+/*
 
 .first_project a,.second_project a, .third_project a, .fourth_project a{
   
@@ -213,10 +287,10 @@ body{
      background-color:#FE1C5D;
      box-shadow: 3px 3px 3px #700b27;
     
-}
+}*/
 
 
-.first_project button,.second_project button, .third_project button, .fourth_project button{
+/*.first_project button,.second_project button, .third_project button, .fourth_project button{
   
     border:none;
     font-weight:bold;
@@ -235,8 +309,8 @@ body{
    display:flex;
    flex-direction: row; 
    justify-content: center;
-}
-
+}*/
+/*
 .techs p:nth-child(1){
 
     flex-wrap: wrap;
@@ -263,7 +337,7 @@ body{
     text-align: center;
     margin-right:0.5em;
     box-shadow: 3px 3px 3px #700b27;
-}
+}*/
 
 
 /**********************************
