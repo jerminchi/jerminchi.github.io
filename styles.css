@@ -126,8 +126,30 @@ body{
 .projects{
 
     display:flex;
-
     flex-direction: column;
+    margin: 1em 0 0 2em;
+}
+
+.projects h1{
+
+color: #282828;
+font-family: "Candal" sans-serif;
+font-size: 22px;
+
+}
+
+.description{
+
+    color:#353535;
+    font-family: "Khula" sans-serif;
+    font-size: 14px;
+    width:200px;
+}
+
+.techs{
+
+    display:flex;
+    flex-direction: row;
 }
 
 
