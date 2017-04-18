@@ -72,7 +72,7 @@ body{
     margin:3em 3em 0 3em;
     font-family: 'Candal', sans-serif;
     font-weight: 700;
-    font-size:30px;
+    font-size:35px;
     text-align: left;
     line-height: 120%;
     flex-wrap: wrap;
@@ -130,20 +130,6 @@ body{
     margin: 1em 0 0 2em;
 }
 
-.projects h1{
-
-color: #282828;
-font-family: "Candal" sans-serif;
-font-size: 22px;
-
-}
-
-.first-project h3{
-
-    font-size:14px;
-    color: #282828;
-}
-
 .description{
 
     color:#353535;
@@ -157,6 +143,22 @@ font-size: 22px;
     display:flex;
     flex-direction: row;
     font-size:8px;
+}
+
+
+
+.projects h1{
+
+color: #282828;
+font-family: "Candal" sans-serif;
+font-size: 22px;
+
+}
+
+.first-project h3, .second-project h3{
+
+    font-size:14px;
+    color: #282828;
 }
 
 
