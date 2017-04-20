@@ -73,11 +73,10 @@ body{
     margin:3em 3em 0 3em;
     font-family: 'Candal', sans-serif;
     font-weight: 700;
-    font-size:35px;
+    font-size:50px;
     text-align: left;
     line-height: 120%;
     flex-wrap: wrap;
-
 }
 .sidebar{
 
@@ -85,6 +84,7 @@ body{
        margin-right:5em;
        margin-top:3em;
        line-height: 130%;
+      
 }
 
 /*.blue{
@@ -138,6 +138,12 @@ body{
     margin: 1em 0 0 2em;
 }
 
+.projects h1 b:nth-child(1){
+
+    font-family:"Candal";   
+    font-size: 30px;
+}
+
 .description{
 
     color:#353535;
@@ -157,19 +163,19 @@ body{
 .techs p:nth-child(1){
 
     border-radius: 15%;
-    background-color:#00E5FF;
+    background-color:#FF9100;
 }
 
 .techs p:nth-child(2){
 
     border-radius: 15%;
-    background-color:#00E5FF;
+    background-color:#FF9100;
 }
 
 .techs p:nth-child(3){
     
     border-radius: 15%;
-    background-color:#00E5FF;
+    background-color:#FF9100;
 }
 
 
@@ -189,16 +195,9 @@ font-size: 22px;
 
 button{
 
-    background-color:#00E5FF;
+    background-color:#FF9100;
+     color:white;
     border:none;
-}
-
-.footer{
-
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color:#00E5FF;
 }
 
 
