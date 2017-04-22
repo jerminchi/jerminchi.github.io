@@ -73,10 +73,19 @@ body{
     margin:3em 3em 0 3em;
     font-family: 'Candal', sans-serif;
     font-weight: 700;
-    font-size:50px;
+    font-size:30px;
     text-align: left;
     line-height: 120%;
     flex-wrap: wrap;
+}
+
+
+
+.sub-heading p{
+
+    position:relative;
+    font-family: 'Khula', sans-serif;
+    font-size:16px;
 }
 .sidebar{
 
@@ -134,8 +143,50 @@ body{
 .projects{
 
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     margin: 1em 0 0 2em;
+    background-color:yellow;
+ 
+}
+
+.projects h1 b{
+
+ 
+}
+
+.outer-box{
+
+    display:flex;
+    flex-direction: column;
+    background-color:red;
+}
+
+.project-name{
+
+    text-align: center;
+}
+
+#images-box{
+
+    align-self: center;
+}
+
+.project-des{
+
+    text-align: center;
+}
+.button-change{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+#prev-b{
+
+    margin-right:0.3em;
+
 }
 
 .projects h1 b:nth-child(1){
