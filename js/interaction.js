@@ -36,6 +36,7 @@ var projectLink = document.querySelector(".project-links");
 //fade in effect on page load
 $(document).ready(function(){
     $("#title").hide(0).delay(500).fadeIn(2000)
+    $(".s-heading").hide(0).delay(1500).fadeIn(2000)
 
 projectLink.href =linkArr[count];
 picFrame.src=picArr[0];
