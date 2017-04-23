@@ -144,6 +144,20 @@ body{
   }
 }
 
+
+@media screen and (max-width: 400px) {
+  
+
+  #title {
+    display: none;
+  }
+
+  .s-heading{
+
+      display: none;
+  }
+}
+
 .projects{
 
     display:flex;
