@@ -17,7 +17,7 @@ var nameArr = ["WikiViewer", "PayUp", "Luminate"];
 var linkArr = ["https://github.com/Ch1bi/WikiViewer", "https://play.google.com/store/apps/details?id=com.ch1bi.payup", "https://bitbucket.org/jerminchi/luminate/src"];
 
 //array of images for slideshow
-var picArr = ["https://upload.wikimedia.org/wikipedia/commons/f/fa/Wikipedia-iconsdaa.png", "img/payup.png", "img/luminate.png"];
+var picArr = ["https://upload.wikimedia.org/wikipedia/commons/0/05/Wikipedia%27s_W_%28Linux_Libertine%29.svg", "img/payup.png", "img/luminate.png"];
 
 var desArr = ["A web app that can view any Wikipedia page - even random ones!", "A native mobile app that keeps track of your debts and debt owed to you", "A native mobile app that informs you of fatalities by law enforcement."];
 
@@ -35,10 +35,10 @@ var projectLink = document.querySelector(".project-links");
 
 //fade in effect on page load
 $(document).ready(function(){
-    $("#title").hide(0).delay(500).fadeIn(2000)
-    $(".s-heading").hide(0).delay(1500).fadeIn(2000)
 
-projectLink.href =linkArr[count];
+    $(".statements").hide(0).delay(1500).fadeIn(2000)
+
+projectLink.href = linkArr[count];
 picFrame.src=picArr[0];
 projectDes.innerHTML = desArr[count];
 projectName.innerHTML = nameArr[count];
@@ -59,9 +59,6 @@ function countCheck(){
         count = 0;
     }
 }
-
-
-
 
 
  if(next.addEventListener("click", function(){

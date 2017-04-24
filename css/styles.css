@@ -53,6 +53,7 @@ button::-moz-focus-inner { border: 0; }
               CSS for my pages
 **********************************************/
 
+
 body{
 
     display:flex;
@@ -75,28 +76,10 @@ body{
     font-weight: 700;
     font-size:50px;
     text-align: center;
-    line-height: 120%;
-   
-}
-
-.sub-heading{
-
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    
+    line-height: 120%;  
 }
 
 
-.sub-heading p{
-
-    font-family: 'Khula', sans-serif;
-    font-size:16px;
-    
-    animation-name: moveIn;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in-out;
-}
 .sidebar{
 
        border-left: 1px solid #dbdbdb;
@@ -104,6 +87,13 @@ body{
        margin-top:3em;
        line-height: 130%;
       
+}
+
+#title{
+
+    font-family: 'Candal', sans-serif;
+    font-weight: 700;
+    
 }
 
  .statements{
@@ -145,38 +135,40 @@ body{
 }
 
 
-@media all and (max-width: 700px) and (min-width:200px) {
-  
-
-  #title {
-    display: none;
-  }
-
-  .s-heading{
-
-      display: none;
-  }
-}
-
 .projects{
 
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
     margin: 1em 0 0 2em;
+    align-content: center;
+    justify-content: center;
  
 }
+
+.projects h1{
+
+    align-self: center; 
+    text-align: center;
+    margin:5em 0 0 0;
+    
+}
+
+
 
 .outer-box{
 
     display:flex;
     flex-direction: column;
+    margin: 3em 0 0 0;
+
+   
    
 }
 
 .project-name{
 
+    margin: 0 0 1em 0;
     text-align: center;
+    font-family: "Lekton" sans-serif;
+    font-size:16pt;
 }
 
 #images-box{
@@ -187,7 +179,25 @@ body{
 .project-des{
 
     text-align: center;
+    font-family: "Lekton" sans-serif;
+    font-size:10pt;
+    line-height: 120%;
+    width:150px;
+    align-self: center;
 }
+
+
+.projects h1 b:nth-child(1){
+
+    font-family:"Candal";   
+    font-size: 30px;
+}
+
+.project-name{
+
+    margin: 0 0 1em 0;
+}
+
 .button-change{
 
     display: flex;
@@ -199,61 +209,6 @@ body{
 
     margin-right:0.3em;
 
-}
-
-.projects h1 b:nth-child(1){
-
-    font-family:"Candal";   
-    font-size: 30px;
-}
-
-.description{
-
-    color:#353535;
-    font-family: "Khula" sans-serif;
-    font-size: 12px;
-    margin: 1.5em 0 0 0;
-}
-
-.techs{
-    
-    display:flex;
-    flex-direction: row;
-    color:white;
-    font-size:10px;
-}
-
-.techs p:nth-child(1){
-
-    border-radius: 15%;
-    background-color:#FF9100;
-}
-
-.techs p:nth-child(2){
-
-    border-radius: 15%;
-    background-color:#FF9100;
-}
-
-.techs p:nth-child(3){
-    
-    border-radius: 15%;
-    background-color:#FF9100;
-}
-
-
-.projects h1{
-
-color: #282828;
-font-family:444"Candal" sans-serif;
-font-size: 22px;
-
-}
-
-.first-project h3, .second-project h3{
-
-    font-size:14px;
-    color: #282828;
 }
 
 button{
@@ -283,203 +238,6 @@ button{
 
 
 
-
-
-
-
-
-
-/**********************************
-        First Page Styles
-***********************************/
-
-/*.first-page{
-    display:flex;
-    flex-direction: row;
-    height:675px; 
-
-}
-
-.heading{
-
-    display:flex;
-    flex-direction: column;
-
-}
-
-.heading h1{
-
- 
-    color: #282828;
-    margin:3em 3em 0 3em;
-    font-family: 'Candal', sans-serif;
-    font-weight: 700;
-    font-size:35px;
-    text-align: left;
-    line-height: 120%;
-     
-
-}
-
-.heading p{
-
-    margin:3em 0 0 6em;
-    color:#353535;
-    font-family: 'Khula', sans-serif;
-    font-size:18px;
-   
-}
-
-
-
- #sidebar {
-     display: flex;
-     flex-direction: column;  
-     align-self: flex-start;  
-     width: 180px;
-     border-left: 1px solid #dbdbdb;
-     margin: 1.5em 0 0 15em;
-      
- }
-
-
-
- .statements{
-
-     margin: 1.5em  0 0 1.5em;
-     color:#353535;
-    font-family: 'Khula', sans-serif;
-     font-size: 12px;
-
- }  
-
- .links li{
-
-     margin:0 0 0 1.5em;  
-    line-height: 150%;
- }
-
- a { 
-     color: inherit;
-     text-decoration: none;
-     outline: none; 
-     } */
-
-
-/**********************************
-       End First Page Styles
-***********************************/
-
-
-/**********************************
-       Projects Styles
-***********************************/
-
-
-/*.projects{
-    
-    display:flex;
-    flex-direction:column;
-    flex-wrap: wrap;   
-  
-}
-
-.first_project, .second_project, .third_project, .fourth_project{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width:150px;
-    height:150px;
-    border-width: medium;
-    border-style: double;
-    border-color:#0277BD;
-    padding: 1em 1em 1em 1em;
-}*/
-
-/*
-.first_project h3,.second_project h3, .third_project h3, .fourth_project h3{
-  
-    font-weight:bold;
-    color:white;
-    text-align: center;  
-}*/
-/*
-.first_project p,.second_project p, .third_project p, .fourth_project p{
-    
-    font-size:0.8em;
-    text-align: center;
-    color:white;
-}*/
-/*
-
-.first_project a,.second_project a, .third_project a, .fourth_project a{
-  
-    align-self: center;
-    border:none;
-    padding:0.5em;
-    width:50%;
-    font-weight:bold;
-    text-align: center;  
-     background-color:#FE1C5D;
-     box-shadow: 3px 3px 3px #700b27;
-    
-}*/
-
-
-/*.first_project button,.second_project button, .third_project button, .fourth_project button{
-  
-    border:none;
-    font-weight:bold;
-    background-color:#FE1C5D;
-    color:white;      
-}
-
-.first_project:hover,.second_project:hover, .third_project:hover, .fourth_project:hover{
-    
-   background-color:#0277BD;
-   box-shadow: 10px 10px 5px #01579B;
-}   
-
-.techs{
-
-   display:flex;
-   flex-direction: row; 
-   justify-content: center;
-}*/
-/*
-.techs p:nth-child(1){
-
-    flex-wrap: wrap;
-    background-color:#FE1C5D;
-    text-align: center;
-    margin-right:0.5em;
-    box-shadow: 3px 3px 3px #700b27;
-    
-}
-
-.techs p:nth-child(2){
-
-    flex-wrap: wrap;
-    background-color:#FE1C5D;
-    text-align: center;
-    margin-right:0.5em;
-    box-shadow: 3px 3px 3px #700b27;
-}
-
-.techs p:nth-child(3){
-
-    flex-wrap: wrap;
-    background-color:#FE1C5D;
-    text-align: center;
-    margin-right:0.5em;
-    box-shadow: 3px 3px 3px #700b27;
-}*/
-
-
-/**********************************
-       End Project Styles
-***********************************/
 
 
 
