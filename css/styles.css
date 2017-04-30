@@ -218,6 +218,44 @@ button{
     border:none;
 }
 
+.skills{
+
+    display: flex;
+    flex-direction:column;
+    margin:5em 0 0 0;
+    background-color: rebeccapurple;
+
+}
+
+.skills h1{
+
+    align-self: center;
+    text-align: center;
+    color:white;
+    font-family: "Candal" sans-serif;
+    font-size: 30px;
+    margin: 0.5em 0 2em 0;
+}
+
+#skill-one,#skill-two, #skill-three{
+
+   align-self: center;
+}
+
+
+.skill-img{
+
+    align-self: center
+    
+}
+
+.skill-description{
+
+    width:100px;
+    text-align: center;
+    word-break: break-all;
+}
+
 
 
 

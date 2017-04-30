@@ -14,7 +14,7 @@ var projectDes = document.querySelector(".project-des");
 
 var nameArr = ["WikiViewer", "PayUp", "Luminate"];
 
-var linkArr = ["https://github.com/Ch1bi/WikiViewer", "https://play.google.com/store/apps/details?id=com.ch1bi.payup", "https://bitbucket.org/jerminchi/luminate/src"];
+var linkArr = ["http://jermainepinckney.com/WikiViewer/", "https://play.google.com/store/apps/details?id=com.ch1bi.payup", "https://bitbucket.org/jerminchi/luminate/src"];
 
 //array of images for slideshow
 var picArr = ["https://upload.wikimedia.org/wikipedia/commons/0/05/Wikipedia%27s_W_%28Linux_Libertine%29.svg", "img/payup.png", "img/luminate.png"];
