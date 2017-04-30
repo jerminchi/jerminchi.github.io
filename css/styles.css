@@ -285,10 +285,19 @@ button{
     text-align: center;
     line-height:120%;
     word-break: break-word;
+    font-family: "Lekton" sans-serif;
     font-size:12px;
     margin: 1em 0 2em 0;
     
 }
+
+footer{
+
+    align-self: center;
+    font-family:"Candal" sans-serif;
+    
+}
+
 
 
 
