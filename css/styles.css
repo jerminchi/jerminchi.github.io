@@ -233,7 +233,8 @@ button{
 .skills{
 
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
+    justify-content: center;
     margin:5em 0 0 0;
     background-color: rebeccapurple;
 
@@ -251,8 +252,7 @@ button{
 
 #skill-one{
 
-  align-self: flex-end;
-   
+   align-self: center;
 }
 
 
