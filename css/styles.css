@@ -105,12 +105,24 @@ body{
 
  }  
 
+ .links{
+
+     color:rebeccapurple;
+ }
+
  .links li{
 
      margin:0 0 0 1.5em;  
     line-height: 150%;
     list-style: square;
  }
+
+ .links li a{
+
+     color:#353535;
+ }
+
+ 
 
  a { 
      color: inherit;
