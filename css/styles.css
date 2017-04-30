@@ -251,7 +251,7 @@ button{
 }
 
 
-.skills h1{
+.skill-heading{
 
     align-self: center;
     text-align: center;
@@ -261,7 +261,7 @@ button{
     margin: 0.5em 0 2em 0;
 }
 
-#skill-one{
+#skill-one, #skill-two, #skill-three{
 
    align-self: center;
 }
@@ -273,6 +273,7 @@ button{
 .skill-img{
 
     margin: 0 0 0 3em;
+    
   
     
 }
@@ -285,7 +286,7 @@ button{
     line-height:120%;
     word-break: break-word;
     font-size:12px;
-    margin: 1em 0 0 0;
+    margin: 1em 0 2em 0;
     
 }
 
