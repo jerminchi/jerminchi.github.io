@@ -137,7 +137,7 @@ body{
 
 .projects{
 
-    margin: 1em 0 0 2em;
+    margin: 1em 0 0 0;
     align-content: center;
     justify-content: center;
  
@@ -221,7 +221,7 @@ button{
 .skills{
 
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     margin:5em 0 0 0;
     background-color: rebeccapurple;
 
@@ -237,23 +237,33 @@ button{
     margin: 0.5em 0 2em 0;
 }
 
-#skill-one,#skill-two, #skill-three{
+#skill-one{
 
-   align-self: center;
+  align-self: flex-end;
+   
 }
+
+
+
 
 
 .skill-img{
 
-    align-self: center
+    margin: 0 0 0 3em;
+  
     
 }
 
 .skill-description{
 
-    width:100px;
+    width:300px;
+    color:white;
     text-align: center;
-    word-break: break-all;
+    line-height:120%;
+    word-break: break-word;
+    font-size:12px;
+    margin: 1em 0 0 0;
+    
 }
 
 
