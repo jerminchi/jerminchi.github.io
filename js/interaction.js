@@ -32,7 +32,6 @@ var projectLink = document.querySelector(".project-links");
 /****End Variables Here*****/
 
 
-
 //fade in effect on page load
 $(document).ready(function(){
 

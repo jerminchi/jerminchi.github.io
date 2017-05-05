@@ -214,13 +214,24 @@ body{
 
     display: flex;
     flex-direction: row;
-    justify-content: center;    
+    justify-content: center;
+   
 }
 
 #prev-b{
 
     margin-right:0.3em;
+    position:relative;
+    bottom: 170px; 
+    left: 130px;
 
+}
+
+#next-b{
+
+    position:relative;
+    bottom: 170px; 
+    right: 130px;
 }
 
 button{
