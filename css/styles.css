@@ -223,7 +223,7 @@ body{
     margin-right:0.3em;
     position:relative;
     bottom: 170px; 
-    left: 130px;
+    right: 80px;
 
 }
 
@@ -231,15 +231,9 @@ body{
 
     position:relative;
     bottom: 170px; 
-    right: 130px;
+    left: 80px;
 }
 
-button{
-
-    background-color:#FF9100;
-     color:white;
-    border:none;
-}
 
 .skills{
 
@@ -300,6 +294,20 @@ button{
     font-size:12px;
     margin: 1em 0 2em 0;
     
+}
+
+.about-me{
+
+    align-self: center;
+    margin: 0.5em 0 0 0.5em;
+}
+
+.about-me p{
+
+     align-self: center;
+    font-family:"Candal" sans-serif;
+
+
 }
 
 footer{
