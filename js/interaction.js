@@ -1,3 +1,4 @@
+/**** Button click code ****/
 var prev = document.getElementById("prev-b")
 .addEventListener("click", goBack)
 
@@ -55,6 +56,10 @@ function goNext(){
                 window.location="/"
              }
     }
+
+    
+    
+    /**** End Button click code ****/
     
 
 
