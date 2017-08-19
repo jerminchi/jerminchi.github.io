@@ -127,7 +127,7 @@ body {
     .introduction h1{
 
         animation-name:slideIn;
-        animation-duration: 2s;
+        animation-duration: 3s;
 
         font-family: Candal;
         font-size: 40pt;
