@@ -71,6 +71,27 @@ body {
   
 }
 
+@keyframes slideUp {
+   
+    0%{ 
+        transform: translate(0px, 400px);
+        }
+   
+        
+        100%{
+                    
+            transform: translate(0px, 0px);
+            }
+}
+
+.introduction p {
+
+    animation-name:slideUp;
+    animation-duration: 4s;
+    font-family: Lekton;
+    font-size:16pt;
+}
+
 @keyframes fadeIn {
     0%   {opacity: 0;}
     100% {opacity: 1;;}
@@ -91,9 +112,15 @@ body {
             transform: translate(-300px, 0px);
         }
 
+        75%{
+
+            transform: translate(100px, 0px);
+            
+        }
+
         100%{
             
-            transform: translate(100px, 0px);
+            transform: translate(0px, 0px);
         }
     }
 
