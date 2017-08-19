@@ -53,11 +53,12 @@ button::-moz-focus-inner { border: 0; }
               CSS for my pages
 **********************************************/
 
+body {
+    height: 100vh;
+}
 
-body{
-
-    display:flex;
-    flex-direction: column;
+body {
+    min-height: 100vh;
 }
 
 .introduction{
@@ -65,12 +66,12 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
     background-color: yellow;
+    height:100%;
+  
 }
 
     .introduction h2{
-        align-self: center;
         font-family: Candal;
         font-size: 25pt;
         text-align: center;
@@ -83,13 +84,20 @@ body{
         text-align: center; 
     }
 
-#title{
-
-    font-family: 'Candal', sans-serif;
-    font-weight: 700;
-    
-}
-
+    #prev-b{
+        
+            position:fixed;
+            bottom: 30%; 
+            right: 60%;
+        
+        }
+        
+        #next-b{
+        
+            position:fixed;
+            bottom: 30%; 
+            left: 60%;
+        }
 
 
 .projects{
@@ -163,53 +171,9 @@ body{
    
 }
 
-#prev-b{
-
-    margin-right:0.3em;
-    position:relative;
-    bottom: 170px; 
-    right: 80px;
-
-}
-
-#next-b{
-
-    position:relative;
-    bottom: 170px; 
-    left: 80px;
-}
 
 
-.skills{
 
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    margin:5em 0 0 0;
-    background-color: rebeccapurple;
-
-}
-
-@media screen and (max-width: 1000px) {
-
-    .skills{
-
-        display: flex;
-        flex-direction: column;
-    }
- 
-}
-
-
-.skill-heading{
-
-    align-self: center;
-    text-align: center;
-    color:white;
-    font-family: "Candal" sans-serif;
-    font-size: 30px;
-    margin: 0.5em 0 2em 0;
-}
 
 #skill-one, #skill-two, #skill-three{
 
