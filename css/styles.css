@@ -84,20 +84,16 @@ body {
         text-align: center; 
     }
 
+    .arrows{
+
+        margin:3em;
+        align-self: auto;
+    }
+
     #prev-b{
-        
-            position:fixed;
-            bottom: 30%; 
-            right: 60%;
-        
-        }
-        
-        #next-b{
-        
-            position:fixed;
-            bottom: 30%; 
-            left: 60%;
-        }
+
+        margin-right:2em;
+    }
 
 
 .projects{
