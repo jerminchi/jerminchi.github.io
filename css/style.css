@@ -1,7 +1,0 @@
-#page-1{
-
-	background-color: black;
-	grid-template-columns: 40px 50px auto 50px 40px;
-	grid-template-rows: 25% 100px auto;
-  
-}
