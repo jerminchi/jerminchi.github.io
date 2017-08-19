@@ -71,13 +71,36 @@ body {
   
 }
 
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;;}
+}
     .introduction h2{
+
+        animation-name: fadeIn;
+        animation-duration: 2s;
         font-family: Candal;
         font-size: 25pt;
         text-align: center;
     }
 
+    @keyframes slideIn {
+        
+        0%{
+
+            transform: translate(-300px, 0px);
+        }
+
+        100%{
+            
+            transform: translate(100px, 0px);
+        }
+    }
+
     .introduction h1{
+
+        animation-name:slideIn;
+        animation-duration: 2s;
 
         font-family: Candal;
         font-size: 40pt;
