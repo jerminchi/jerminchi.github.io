@@ -140,6 +140,19 @@ body {
         margin-right:2em;
     }
 
+    #prev-b:hover{
+
+        background-color:red;
+      
+    }
+
+    #next-b:hover{
+        
+        background-color:blue;
+              
+        }
+        
+
 
 .projects{
 
