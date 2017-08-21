@@ -144,7 +144,7 @@ body {
 
     @keyframes enlarge {
         
-        0%{
+        /* 0%{
 
             transform: scale(-1, -1);
         }
@@ -153,7 +153,7 @@ body {
         100%{
             
             transform: scale(1, 1);
-        }
+        } */
     }
 
     .introduction h1{
@@ -179,6 +179,24 @@ body {
                 font-size: 25pt;
                      
                     }
+
+                    .arrows{
+
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    #prev-b, #next-b{
+
+                        max-width:55%;
+                        display: block;
+                        margin: 0 auto;
+                        
+                        
+                    }
+                        
+
+                    
           }
           
 
@@ -190,13 +208,14 @@ body {
 
     #prev-b{
         
+        width:250px;
         animation-name:enlarge;
         animation-duration: 4s;
         margin-right:2em;
     }
 
     #next-b{
-
+        width:250px;
         animation-name:enlarge;
         animation-duration: 4s;
     }
