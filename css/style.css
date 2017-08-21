@@ -190,6 +190,7 @@ body {
 
                     #prev-b, #next-b{
 
+                        min-width: 50%;
                         max-width:50%;
                         display: block;
                         margin: 0 auto;
