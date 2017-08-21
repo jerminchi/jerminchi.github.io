@@ -57,9 +57,6 @@ body {
     height: 100vh;
 }
 
-body {
-    min-height: 100vh;
-}
 
 .introduction{
     display: flex;
@@ -92,20 +89,35 @@ body {
     font-size:16pt;
 }
 
-@keyframes fadeIn {
-    0%   {opacity: 0;}
-    100% {opacity: 1;;}
+
+
+
+@keyframes slideInLeft {
+   
+    0%{
+        
+        transform: translate(300px, 0px);
+
+        }
+        
+        
+        100%{
+                    
+         transform: translate(0px, 0px);
+
+        }
+
 }
     .introduction h2{
 
-        animation-name: fadeIn;
+        animation-name: slideInLeft;
         animation-duration: 2s;
         font-family: Candal;
-        font-size: 25pt;
+        font-size: 50pt;
         text-align: center;
     }
 
-    @keyframes slideIn {
+    @keyframes slideInRight {
         
         0%{
 
@@ -121,13 +133,29 @@ body {
 
     .introduction h1{
 
-        animation-name:slideIn;
+        animation-name:slideInRight;
         animation-duration: 3s;
 
         font-family: Candal;
-        font-size: 40pt;
+        font-size: 60pt;
         text-align: center; 
     }
+
+    @media (min-width: 200px) and (max-width: 400px){
+        
+            .introduction h1{
+        
+                font-size: 40pt
+            }
+
+            .introduction h2{
+                
+    
+                font-size: 25pt;
+                     
+                    }
+          }
+          
 
     .arrows{
 
@@ -151,145 +179,9 @@ body {
         background-color:blue;
               
         }
+        /**** Work page CSS ****/
+
         
-
-
-.projects{
-
-    margin: 1em 0 0 0;
-    align-content: center;
-    justify-content: center;
- 
-}
-
-.projects h1{
-
-    align-self: center; 
-    text-align: center;
-    margin:5em 0 0 0;
-    
-}
-
-
-
-.outer-box{
-
-    display:flex;
-    flex-direction: column;
-    margin: 3em 0 0 0;
-
-   
-   
-}
-
-.project-name{
-
-    margin: 0 0 1em 0;
-    text-align: center;
-    font-family: "Lekton" sans-serif;
-    font-size:16pt;
-}
-
-#images-box{
-
-    align-self: center;
-}
-
-.project-des{
-
-    text-align: center;
-    font-family: "Lekton" sans-serif;
-    font-size:10pt;
-    line-height: 120%;
-    width:150px;
-    align-self: center;
-}
-
-
-.projects h1 b:nth-child(1){
-
-    font-family:"Candal";   
-    font-size: 30px;
-}
-
-.project-name{
-
-    margin: 0 0 1em 0;
-}
-
-.button-change{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   
-}
-
-
-
-
-
-#skill-one, #skill-two, #skill-three{
-
-   align-self: center;
-}
-
-
-
-
-
-.skill-img{
-
-    margin: 0 0 0 3em;
-    
-  
-    
-}
-
-.skill-description{
-
-    width:300px;
-    color:white;
-    text-align: center;
-    line-height:120%;
-    word-break: break-word;
-    font-family: "Lekton" sans-serif;
-    font-size:12px;
-    margin: 1em 0 2em 0;
-    
-}
-
-.about-me{
-
-    align-self: center;
-    margin: 0.5em 0 0 0.5em;
-}
-
-.about-me p{
-
-     align-self: center;
-    font-family:"Candal" sans-serif;
-
-
-}
-
-footer{
-
-    align-self: center;
-    font-family:"Candal" sans-serif;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
