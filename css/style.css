@@ -172,19 +172,19 @@ body {
         
             .introduction h1{
         
-                font-size: 20pt
+                font-size: 40pt
             }
 
             .introduction h2{
                 
     
-                font-size: 25pt;
+                font-size: 35pt;
                      
                     }
 
                     .arrows{
+                        
 
-                        flex-direction: column;
                     }
 
                     
