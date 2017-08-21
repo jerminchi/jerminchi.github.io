@@ -182,12 +182,7 @@ body {
                      
                     }
 
-                    .arrows{
-
-                        display: block;
-                        margin: 0 auto;
-                    }
-
+                    
                     #prev-b, #next-b{
 
                         min-width: 50%;
