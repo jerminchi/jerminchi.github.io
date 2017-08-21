@@ -55,7 +55,11 @@ button::-moz-focus-inner { border: 0; }
 
 body {
     height: 100vh;
-}
+
+        
+        
+        }
+
 
 
 .introduction{
@@ -65,7 +69,14 @@ body {
     justify-content: center;
     background-color: yellow;
     height:100%;
-  
+
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(252, 0, 0, 0.20), rgba(255, 0, 0, 0.20) 3px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(255, 1, 1, 0.20), rgba(255, 0, 0, 0.20) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(252, 0, 0, 0.20), rgba(254, 2, 2, 0.20) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(254, 0, 0, 0.20), rgba(254, 0, 0, 0.20) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 3px 3px;
 }
 
 @keyframes slideUp {
@@ -131,6 +142,20 @@ body {
         }
     }
 
+    @keyframes enlarge {
+        
+        0%{
+
+            transform: scale(-1, -1);
+        }
+
+
+        100%{
+            
+            transform: scale(1, 1);
+        }
+    }
+
     .introduction h1{
 
         animation-name:slideInRight;
@@ -164,19 +189,27 @@ body {
     }
 
     #prev-b{
-
+        
+        animation-name:enlarge;
+        animation-duration: 4s;
         margin-right:2em;
+    }
+
+    #next-b{
+
+        animation-name:enlarge;
+        animation-duration: 4s;
     }
 
     #prev-b:hover{
 
-        background-color:red;
+        
       
     }
 
     #next-b:hover{
         
-        background-color:blue;
+       
               
         }
         

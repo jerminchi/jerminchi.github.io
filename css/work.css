@@ -79,6 +79,7 @@ button::-moz-focus-inner { border: 0; }
      font-family: Candal;
      font-size: 16pt;
      text-align: center;
+     color:#383838;
  }
 
  .project-img{
@@ -99,6 +100,7 @@ button::-moz-focus-inner { border: 0; }
      font-family: Khula;
      font-size:12pt;
      text-align: center;
+     color:#383838
  }
 
  .techs{
@@ -112,33 +114,20 @@ button::-moz-focus-inner { border: 0; }
      padding: 1em;
      font-family: Khula;
      font-size:10pt;
+     color:#383838;
  }
 
  .techs li:nth-child(2n){
 
-    background-color:red;
+    /* background-color:red; */
  }
 
  .techs li:nth-child(2n + 1){
     
-        background-color:blue;
+        /* background-color:blue; */
      }
 
-     @keyframes increase {
-        
-        100% {
-            width: 1200px;
-        }
-    }
 
-     .point {
-        height:0px;
-        width:1px;
-        border-bottom:5px solid #000;
-        animation: increase 3s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: forwards;
-        }
  /**** End Work page CSS ****/
 
  
