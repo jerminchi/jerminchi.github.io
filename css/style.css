@@ -172,7 +172,7 @@ body {
         
             .introduction h1{
         
-                font-size: 40pt
+                font-size: 20pt
             }
 
             .introduction h2{
@@ -180,6 +180,11 @@ body {
     
                 font-size: 25pt;
                      
+                    }
+
+                    .arrows{
+
+                        flex-direction: column;
                     }
 
                     
@@ -200,6 +205,8 @@ body {
 
     .arrows{
 
+        display: flex;
+        flex-direction: row;
         margin:3em;
         align-self: auto;
     }
