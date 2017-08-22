@@ -52,11 +52,23 @@ button::-moz-focus-inner { border: 0; }
 
 /**** Work page CSS ****/
 
+body{
+
+ 
+    
+}
+
 .container{
     display: flex;
     flex-direction: column;
-  
-   
+    background-image: url(../img/dot-bg.jpg);
+    background-size: 100px 100px;
+ }
+
+ .container img{
+
+    display: block;
+    margin:0 auto;
  }
 
  #project-one, #project-two, #project-three, #project-four{
