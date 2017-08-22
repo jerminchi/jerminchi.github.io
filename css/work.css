@@ -73,7 +73,7 @@ button::-moz-focus-inner { border: 0; }
  #project-one, #project-two, #project-three, #project-four{
 
     align-self: auto;
-     margin:2em 2em 2em 0;
+    
      line-height: 1.2em;
      
 
