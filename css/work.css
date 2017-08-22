@@ -50,11 +50,6 @@ button::-moz-focus-inner { border: 0; }
 
 /**** Work page CSS ****/
 
-body{
-
-    background-size: 100px 100px;
-}
-
 
 #lips{
     
@@ -80,7 +75,7 @@ body{
     align-self: auto;
      margin:2em 2em 2em 0;
      line-height: 1.2em;
-     width:300px;
+     
 
      
  }
@@ -136,6 +131,24 @@ body{
      text-align: center;
      
  }
+
+ .arrows{
+    
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            justify-content: center;
+        }
+    
+        #prev-b{
+            
+            width:250px;
+            margin-right:2em;
+        }
+    
+        #next-b{
+            width:250px;
+        }
 
  @media (min-width: 200px) and (max-width: 500px){
 

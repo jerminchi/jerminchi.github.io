@@ -72,15 +72,6 @@ body {
     background-color: yellow;
     height:100%;
 
-     
-/* 
-    background-image: -webkit-repeating-radial-gradient(center center, rgba(252, 0, 0, 0.20), rgba(255, 0, 0, 0.20) 3px, transparent 1px, transparent 100%);
-    background-image: -moz-repeating-radial-gradient(center center, rgba(255, 1, 1, 0.20), rgba(255, 0, 0, 0.20) 1px, transparent 1px, transparent 100%);
-    background-image: -ms-repeating-radial-gradient(center center, rgba(252, 0, 0, 0.20), rgba(254, 2, 2, 0.20) 1px, transparent 1px, transparent 100%);
-    background-image: repeating-radial-gradient(center center, rgba(254, 0, 0, 0.20), rgba(254, 0, 0, 0.20) 1px, transparent 1px, transparent 100%);
-    -webkit-background-size: 3px 3px;
-    -moz-background-size: 3px 3px;
-    background-size: 3px 3px; */
 }
 
 @keyframes slideUp {
@@ -186,7 +177,8 @@ body {
 
                     .arrows{
                         
-
+                        display: block;
+                        
                     }
 
                     
@@ -217,28 +209,16 @@ body {
         
         width:250px;
         animation-name:enlarge;
-        animation-duration: 4s;
+        animation-duration: 2s;
         margin-right:2em;
     }
 
     #next-b{
         width:250px;
         animation-name:enlarge;
-        animation-duration: 4s;
+        animation-duration: 2s;
     }
 
-    #prev-b:hover{
-
-        
-      
-    }
-
-    #next-b:hover{
-        
-       
-              
-        }
-        
 
 
 
