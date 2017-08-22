@@ -50,6 +50,7 @@ button::-moz-focus-inner { border: 0; }
 
 /**** Work page CSS ****/
 
+<<<<<<< HEAD
 body{
 
     background-image: url(../img/dot-bg.jpg);
@@ -71,6 +72,16 @@ body{
  }
 
 
+=======
+/**** Work page CSS ****/
+
+.container{
+    display: flex;
+    flex-direction: column;
+  
+   
+ }
+>>>>>>> parent of 42539b4... testing background in work page
 
  #project-one, #project-two, #project-three, #project-four{
 
