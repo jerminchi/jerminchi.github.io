@@ -71,15 +71,6 @@ body{
  }
 
 
- .project-img{
-
-  
- }
-
- .project-img img{
-
-    align-self: flex-start;
- }
 
  #project-one, #project-two, #project-three, #project-four{
 
@@ -151,9 +142,21 @@ body{
     }
         .container{
 
+            display: flex;
             flex-direction: column;
-        }      
-      }
+            
+        }
+        
+       .title{
+
+        align-self: center;
+       }
+
+       .description{
+
+        display: block;
+        margin: 0 auto;
+       }
 
 
  /**** End Work page CSS ****/
