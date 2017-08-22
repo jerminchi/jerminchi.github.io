@@ -50,48 +50,55 @@ button::-moz-focus-inner { border: 0; }
 
 /**** Work page CSS ****/
 
-/**** Work page CSS ****/
-
 body{
 
- 
-    
+    background-image: url(../img/dot-bg.jpg);
+    background-size: 100px 100px;
 }
+
+
+#lips{
+    
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+     }
 
 .container{
     display: flex;
-    flex-direction: column;
-    background-image: url(../img/dot-bg.jpg);
-    background-size: 100px 100px;
+    flex-direction: row;
+    justify-content: center;
  }
 
- .container img{
 
-    display: block;
-    margin:0 auto;
+ .project-img{
+
+  
+ }
+
+ .project-img img{
+
+    align-self: flex-start;
  }
 
  #project-one, #project-two, #project-three, #project-four{
 
-    
-     padding:1em 0 0 0;
+    align-self: auto;
+     margin:2em 2em 2em 0;
      line-height: 1.2em;
      width:300px;
-     align-self: center;
 
      
  }
 
  
 
-
-
-
  .title{
      font-family: Candal;
-     font-size: 16pt;
+     font-size: 32pt;
      text-align: center;
-     color:#383838;
+     color:black;
+     line-height: 1em;
  }
 
  .project-img{
@@ -110,15 +117,19 @@ body{
  .description{
 
      font-family: Khula;
-     font-size:12pt;
+     font-size:14pt;
      text-align: center;
-     color:#383838
+     color:#383838;
+     background-color: white;
+
  }
 
  .techs{
      
      display: flex;
+     flex-direction: row;
      justify-content: center;  
+
  }
 
  .techs li{
@@ -127,6 +138,9 @@ body{
      font-family: Khula;
      font-size:10pt;
      color:#383838;
+     background-color: white;
+     text-align: center;
+     
  }
 
  .techs li:nth-child(2n){
