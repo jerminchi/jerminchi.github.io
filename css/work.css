@@ -143,15 +143,17 @@ body{
      
  }
 
- .techs li:nth-child(2n){
+ @media (min-width: 200px) and (max-width: 500px){
 
-    /* background-color:red; */
- }
+    #lips{
 
- .techs li:nth-child(2n + 1){
-    
-        /* background-color:blue; */
-     }
+        width: 75%;
+    }
+        .container{
+
+            flex-direction: column;
+        }      
+      }
 
 
  /**** End Work page CSS ****/
