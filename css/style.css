@@ -182,65 +182,31 @@ body {
                 text-align: center; 
             }
 
+            #work-word:hover{
+
+                background-color:magenta;
+                color:white;
+                padding:0.1em;
+            }
+
+            #contact-word:hover{
+                
+            background-color:magenta;
+            color:white;
+            padding:0.1em;
+
+            }
+
 
 
     @media (min-width: 200px) and (max-width: 500px){
         
-            .introduction h1{
-        
-                font-size: 40pt
-            }
-
-            .introduction h2{
-                
-    
-                font-size: 35pt;
-                     
-                    }
-
-                    .arrows{
-                        
-                        display: block;
-                        
-                    }
-
-                    
-                    #prev-b, #next-b{
-
-                        min-width: 65%;
-                        max-width:65%;
-                        display: block;
-                        margin: 0 auto;
-                        
-                        
-                    }
+          
                         
 
                     
           }
           
-
-    .arrows{
-
-        display: flex;
-        flex-direction: row;
-        align-self: auto;
-        margin-top:3em;
-    }
-
-    #prev-b{
-        
-        width:250px;
-        animation-name:enlarge;
-        animation-duration: 2s;
-        margin-right:2em;
-    }
-
-    #next-b{
-        width:250px;
-        animation-name:enlarge;
-        animation-duration: 2s;
-    }
 
 
      /* The Modal (background) */

@@ -4,7 +4,7 @@
 var modal = document.getElementById('modal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("next-b");
+var btn = document.getElementById("work-word");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
