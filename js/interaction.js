@@ -8,23 +8,23 @@ var next = document.getElementById("next-b")
 
 function goBack(){
 
-    if(window.location.pathname == "/"){
+    // if(window.location.pathname == "/"){
 
-        window.location="/contact.html"
-    }
+    //     window.location="/contact.html"
+    // }
 
-    else if(window.location.pathname == "/contact.html"){
+    // else if(window.location.pathname == "/contact.html"){
 
-        window.location="/about.html"
-    }
+    //     window.location="/about.html"
+    // }
 
-    else if(window.location.pathname == "/about.html"){
+    // else if(window.location.pathname == "/about.html"){
         
-    window.location="/work.html"
+    // window.location="/work.html"
 
-     }
+    //  }
 
-     else if(window.location.pathname == "/work.html"){
+     if(window.location.pathname == "/work.html"){
                 
         window.location="/"
      }
@@ -40,21 +40,21 @@ function goNext(){
                 window.location="/work.html"
             }
         
-            else if(window.location.pathname == "/work.html"){
+            // else if(window.location.pathname == "/work.html"){
         
-                window.location="/about.html"
-            }
+            //     window.location="/about.html"
+            // }
         
-            else if(window.location.pathname == "/about.html"){
+            // else if(window.location.pathname == "/about.html"){
                 
-            window.location="/contact.html"
+            // window.location="/contact.html"
         
-             }
+            //  }
         
-             else if(window.location.pathname == "/contact.html"){
+            //  else if(window.location.pathname == "/contact.html"){
                         
-                window.location="/"
-             }
+            //     window.location="/"
+            //  }
     }
 
     
