@@ -1,6 +1,7 @@
 /**** Button click code ****/
-var prev = document.getElementById("prev-b")
-.addEventListener("click", goBack)
+
+// var prev = document.getElementById("prev-b")
+// .addEventListener("click", goBack)
 
 var next = document.getElementById("next-b")
 .addEventListener("click", goNext)
