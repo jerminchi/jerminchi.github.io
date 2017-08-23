@@ -106,6 +106,12 @@ body{
  
  }
 
+ .project-img a{
+
+    display: block;
+    margin: 0 auto;
+ }
+
  .description{
 
      font-family: Khula;

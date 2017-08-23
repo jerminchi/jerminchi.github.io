@@ -1,62 +1,30 @@
 /**** Button click code ****/
 
-// var prev = document.getElementById("prev-b")
-// .addEventListener("click", goBack)
+// Get the modal
+var modal = document.getElementById('modal');
 
-var next = document.getElementById("next-b")
-.addEventListener("click", goNext)
+// Get the button that opens the modal
+var btn = document.getElementById("next-b");
 
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-function goBack(){
-
-    // if(window.location.pathname == "/"){
-
-    //     window.location="/contact.html"
-    // }
-
-    // else if(window.location.pathname == "/contact.html"){
-
-    //     window.location="/about.html"
-    // }
-
-    // else if(window.location.pathname == "/about.html"){
-        
-    // window.location="/work.html"
-
-    //  }
-
-     if(window.location.pathname == "/work.html"){
-                
-        window.location="/"
-     }
-            
-    
-   
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
 }
 
-function goNext(){
-    
-    if(window.location.pathname == "/"){
-        
-                window.location="/work.html"
-            }
-        
-            // else if(window.location.pathname == "/work.html"){
-        
-            //     window.location="/about.html"
-            // }
-        
-            // else if(window.location.pathname == "/about.html"){
-                
-            // window.location="/contact.html"
-        
-            //  }
-        
-            //  else if(window.location.pathname == "/contact.html"){
-                        
-            //     window.location="/"
-            //  }
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
+} 
 
     
     
