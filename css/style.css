@@ -63,7 +63,7 @@ body {
 
 .introduction{
 
-    background-image: url(../img/red-dots.png);
+    /* background-image: url(../img/red-dots.png); */
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -119,7 +119,7 @@ body {
         animation-name: slideInLeft;
         animation-duration: 2s;
         font-family: Candal;
-        font-size: 50pt;
+        font-size: 30pt;
         text-align: center;
     }
 
@@ -168,9 +168,21 @@ body {
         animation-duration: 3s;
 
         font-family: Candal;
-        font-size: 60pt;
+        font-size: 30pt;
         text-align: center; 
     }
+
+    .introduction h3{
+        
+                animation-name:slideUp;
+                animation-duration: 3s;
+        
+                font-family: Khula;
+                font-size: 25pt;
+                text-align: center; 
+            }
+
+
 
     @media (min-width: 200px) and (max-width: 500px){
         
