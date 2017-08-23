@@ -195,8 +195,8 @@ body {
                     
                     #prev-b, #next-b{
 
-                        min-width: 35%;
-                        max-width:35%;
+                        min-width: 65%;
+                        max-width:65%;
                         display: block;
                         margin: 0 auto;
                         
