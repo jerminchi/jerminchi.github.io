@@ -87,7 +87,7 @@ body {
             }
 }
 
-.introduction p {
+.introduction p  {
 
     animation-name:slideUp;
     animation-duration: 4s;
@@ -162,7 +162,21 @@ body {
         }
     }
 
-    .introduction h1{
+    @keyframes fadeIn {
+        
+        0%{
+
+            opacity: 0;
+        }
+
+
+        100%{
+            
+            opacity: 1;
+        }
+    }
+
+    #my-name{
 
         animation-name:slideInRight;
         animation-duration: 3s;
@@ -172,25 +186,44 @@ body {
         text-align: center; 
     }
 
-    .introduction h3{
+         #my-title{
         
-                animation-name:slideUp;
-                animation-duration: 3s;
+                animation-name:fadeIn;
+                animation-duration: 5s;
         
                 font-family: Khula;
                 font-size: 25pt;
                 text-align: center; 
             }
 
+            #my-blurb{
+
+                animation-name:fadeIn;
+                animation-duration: 5s;
+
+            }
+
+            #work-word{
+
+                text-decoration: underline; 
+            }
+
             #work-word:hover{
 
+                text-decoration: none;
                 background-color:magenta;
                 color:white;
                 padding:0.1em;
             }
 
+            #contact-word{
+
+                text-decoration: underline;
+            }
+
             #contact-word:hover{
-                
+            
+            text-decoration: none;
             background-color:magenta;
             color:white;
             padding:0.1em;

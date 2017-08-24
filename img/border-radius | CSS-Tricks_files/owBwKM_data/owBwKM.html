@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+  <title>CodePen - All the border-radius'</title>
+  <link href="owBwKM_data/css.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="owBwKM_data/normalize.css">
+
+  
+      <style>
+      :root {
+  --br: 15px;
+  text-align: center;
+  color: white;
+  background: #f06d06;
+  padding: 1rem;
+}
+
+body {
+  background: #222;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-family: 'Spectral', serif;
+  font-size: calc(1rem + 3.3vw);
+}
+
+input {
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+
+.br-all {
+  border-radius: var(--br);
+}
+
+.br-top-left {
+  border-top-left-radius: var(--br);
+}
+
+.br-top-right {
+  border-top-right-radius: var(--br);
+}
+
+.br-bottom-left {
+  border-bottom-left-radius: var(--br);
+}
+
+.br-bottom-right {
+  border-bottom-right-radius: var(--br);
+}
+
+.br-four-value {
+  border-radius: var(--br) calc(var(--br)*2) calc(var(--br)*3) calc(var(--br)/2);
+}
+
+.br-three-value {
+  border-radius: var(--br) calc(var(--br)*2) calc(var(--br)*3);
+}
+
+.br-two-value {
+  border-radius: var(--br) calc(var(--br)*2);
+}
+
+.br-slash-one {
+  border-radius: var(--br)/calc(var(--br)*3);
+}
+
+.br-slash-two {
+  border-radius: calc(var(--br)*3)/var(--br);
+}
+
+.br-slash-three {
+  border-radius: calc(var(--br)*4) calc(var(--br)*3) calc(var(--br)*2) calc(var(--br)*1)/calc(var(--br)*1) calc(var(--br)*2) calc(var(--br)*3) calc(var(--br)*4);
+}
+
+.box {
+  background: white;
+  color: #222;
+  height: 100px;
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: nowrap;
+  padding: 1rem;
+}
+@media (max-width: 550px) {
+  .box {
+    margin-bottom: 2rem;
+  }
+}
+
+.allBoxes {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+.allBoxes .br-four-value {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: -1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+.allBoxes .br-all {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+.allBoxes .br-slash-three {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: -1;
+}
+@media (max-width: 1000px) {
+  .allBoxes {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  .allBoxes .br-four-value {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: -1;
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+  }
+  .allBoxes .br-all {
+    grid-column-end: 1;
+    grid-column-end: -1;
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+  }
+}
+@media (max-width: 550px) {
+  .allBoxes {
+    display: block;
+  }
+}
+
+    </style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+</head>
+
+<body translate="no">
+
+  <div id="root"><div data-reactroot=""><h1>The Border Radiuses</h1><input min="0" max="30" id="br-value" value="15" type="range"><div class="allBoxes"><div class="box br-all"><!-- react-text: 6 -->border-radius<!-- /react-text --><!-- react-text: 7 -->: <!-- /react-text --><!-- react-text: 8 -->15<!-- /react-text --><!-- react-text: 9 -->px;<!-- /react-text --><span></span><span></span><span></span><span></span></div><div class="box br-top-left"><!-- react-text: 15 -->border-top-left-radius<!-- /react-text --><!-- react-text: 16 -->: <!-- /react-text --><!-- react-text: 17 -->15<!-- /react-text --><!-- react-text: 18 -->px;<!-- /react-text --><span></span><span></span><span></span><span></span></div><div class="box br-top-right"><!-- react-text: 24 -->border-top-right-radius<!-- /react-text --><!-- react-text: 25 -->: <!-- /react-text --><!-- react-text: 26 -->15<!-- /react-text --><!-- react-text: 27 -->px;<!-- /react-text --><span></span><span></span><span></span><span></span></div><div class="box br-bottom-left"><!-- react-text: 33 -->border-bottom-left-radius<!-- /react-text --><!-- react-text: 34 -->: <!-- /react-text --><!-- react-text: 35 -->15<!-- /react-text --><!-- react-text: 36 -->px;<!-- /react-text --><span></span><span></span><span></span><span></span></div><div class="box br-bottom-right"><!-- react-text: 42 -->border-bottom-right-radius<!-- /react-text --><!-- react-text: 43 -->: <!-- /react-text --><!-- react-text: 44 -->15<!-- /react-text --><!-- react-text: 45 -->px;<!-- /react-text --><span></span><span></span><span></span><span></span></div><div class="box br-four-value"><!-- react-text: 51 -->border-radius<!-- /react-text --><!-- react-text: 52 -->: <!-- /react-text --><!-- react-text: 53 -->15px 30px 45px 7.5<!-- /react-text --><!-- react-text: 54 -->px;<!-- /react-text --><span></span><span></span><span></span><span></span></div><div class="box br-two-value"><!-- react-text: 60 -->border-radius<!-- /react-text --><!-- react-text: 61 -->: <!-- /react-text --><!-- react-text: 62 -->15px 30<!-- /react-text --><!-- react-text: 63 -->px;<!-- /react-text --><span></span><span></span><span></span><span></span></div><div class="box br-three-value"><!-- react-text: 69 -->border-radius<!-- /react-text --><!-- react-text: 70 -->: <!-- /react-text --><!-- react-text: 71 -->15px 30px 45<!-- /react-text --><!-- react-text: 72 -->px;<!-- /react-text --><span></span><span></span><span></span><span></span></div><div class="box br-slash-one"><!-- react-text: 78 -->border-radius<!-- /react-text --><!-- react-text: 79 -->: <!-- /react-text --><!-- react-text: 80 -->15px/45<!-- /react-text --><!-- react-text: 81 -->px;<!-- /react-text --><span></span><span></span><span></span><span></span></div><div class="box br-slash-two"><!-- react-text: 87 -->border-radius<!-- /react-text --><!-- react-text: 88 -->: <!-- /react-text --><!-- react-text: 89 -->45px/15<!-- /react-text --><!-- react-text: 90 -->px;<!-- /react-text --><span></span><span></span><span></span><span></span></div><div class="box br-slash-three"><!-- react-text: 96 -->border-radius<!-- /react-text --><!-- react-text: 97 -->: <!-- /react-text --><!-- react-text: 98 -->60px 45px 30px 15px/15px 30px 45px 60<!-- /react-text --><!-- react-text: 99 -->px;<!-- /react-text --><span></span><span></span><span></span><span></span></div></div></div></div>
+    <script src="owBwKM_data/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26.js"></script>
+
+  <script src="owBwKM_data/react.js"></script>
+<script src="owBwKM_data/react-dom.js"></script>
+<script src="owBwKM_data/index.js"></script>
+
+    <script>
+    "use strict";
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Box = function (_React$Component) {
+  _inherits(Box, _React$Component);
+
+  function Box() {
+    _classCallCheck(this, Box);
+
+    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+  }
+
+  Box.prototype.render = function render() {
+    var _classNames;
+
+    var theClass = this.props.theClass;
+
+    var theClasses = classNames((_classNames = {
+      'box': true
+    }, _classNames["" + theClass] = true, _classNames));
+
+    return React.createElement(
+      "div",
+      { className: theClasses },
+      this.props.label,
+      ": ",
+      this.props.value,
+      "px;",
+      React.createElement("span", { "class": "tl" }),
+      React.createElement("span", { "class": "tr" }),
+      React.createElement("span", { "class": "bl" }),
+      React.createElement("span", { "class": "br" })
+    );
+  };
+
+  return Box;
+}(React.Component);
+
+var App = function (_React$Component2) {
+  _inherits(App, _React$Component2);
+
+  function App(props) {
+    _classCallCheck(this, App);
+
+    var _this2 = _possibleConstructorReturn(this, _React$Component2.call(this, props));
+
+    _this2.state = {
+      value: 15
+    };
+
+    _this2.handleChange = _this2.handleChange.bind(_this2);
+    return _this2;
+  }
+
+  App.prototype.handleChange = function handleChange(event) {
+    this.setState({ value: event.target.value });
+    document.documentElement.style.setProperty("--br", event.target.value + "px");
+  };
+
+  App.prototype.render = function render() {
+
+    var fourValueValue = this.state.value + "px " + this.state.value * 2 + "px " + this.state.value * 3 + "px " + this.state.value / 2;
+    var threeValueValue = this.state.value + "px " + this.state.value * 2 + "px " + this.state.value * 3;
+    var twoValueValue = this.state.value + "px " + this.state.value * 2;
+    var slashSyntaxOne = this.state.value + "px/" + this.state.value * 3;
+    var slashSyntaxTwo = this.state.value * 3 + "px/" + this.state.value;
+    var slashSyntaxThree = this.state.value * 4 + "px " + this.state.value * 3 + "px " + this.state.value * 2 + "px " + this.state.value + "px/" + this.state.value + "px " + this.state.value * 2 + "px " + this.state.value * 3 + "px " + this.state.value * 4;
+
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(
+        "h1",
+        null,
+        "The Border Radiuses"
+      ),
+      React.createElement("input", { type: "range", id: "br-value", min: "0", max: "30", onChange: this.handleChange, value: this.state.value }),
+      React.createElement(
+        "div",
+        { className: "allBoxes" },
+        React.createElement(Box, { theClass: "br-all", value: this.state.value, label: "border-radius" }),
+        React.createElement(Box, { theClass: "br-top-left", value: this.state.value, label: "border-top-left-radius" }),
+        React.createElement(Box, { theClass: "br-top-right", value: this.state.value, label: "border-top-right-radius" }),
+        React.createElement(Box, { theClass: "br-bottom-left", value: this.state.value, label: "border-bottom-left-radius" }),
+        React.createElement(Box, { theClass: "br-bottom-right", value: this.state.value, label: "border-bottom-right-radius" }),
+        React.createElement(Box, { theClass: "br-four-value", value: fourValueValue, label: "border-radius" }),
+        React.createElement(Box, { theClass: "br-two-value", value: twoValueValue, label: "border-radius" }),
+        React.createElement(Box, { theClass: "br-three-value", value: threeValueValue, label: "border-radius" }),
+        React.createElement(Box, { theClass: "br-slash-one", value: slashSyntaxOne, label: "border-radius" }),
+        React.createElement(Box, { theClass: "br-slash-two", value: slashSyntaxTwo, label: "border-radius" }),
+        React.createElement(Box, { theClass: "br-slash-three", value: slashSyntaxThree, label: "border-radius" })
+      )
+    );
+  };
+
+  return App;
+}(React.Component);
+
+ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
+  //# sourceURL=pen.js
+  </script>
+
+  
+  
+
+
+
+ </body></html>
