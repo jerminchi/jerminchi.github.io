@@ -293,6 +293,7 @@ body {
  .title{
      font-family: Candal;
      font-size: 32pt;
+     font-weight: 700;
      text-align: center;
      color:black;
      line-height: 1em;
@@ -333,7 +334,7 @@ body {
      display: flex;
      flex-direction: row;
      justify-content: center;  
-
+    
  }
 
  .techs li{
@@ -343,6 +344,8 @@ body {
      font-size:10pt;
      color:#383838;
      text-align: center;
+     margin-bottom:4em;
+     
      
  }
 
