@@ -192,7 +192,7 @@ body {
                 animation-duration: 5s;
         
                 font-family: Khula;
-                font-size: 25pt;
+                font-size: 20pt;
                 text-align: center; 
             }
 
@@ -287,8 +287,74 @@ body {
 
 
 
+/**** Work CSS ****/
+#project-one, #project-two, #project-three, #project-four{
+    
+    display: flex;
+    flex-direction: column;
+     line-height: 1.2em;  
 
+ }
 
+ 
+
+ .title{
+     font-family: Candal;
+     font-size: 32pt;
+     text-align: center;
+     color:black;
+     line-height: 1em;
+ }
+
+ .project-img{
+     
+     display: flex; 
+ }
+
+ .project-img img{
+     
+    display: block;
+    margin: 0 auto;
+    width:400px;
+ 
+ }
+
+ .project-img a{
+
+    display: block;
+    margin: 0 auto;
+ }
+
+ .description{
+
+     font-family: Khula;
+     font-size:14pt;
+     text-align: center;
+     color:#383838;
+     align-self: center;
+     max-width: 50%;
+
+ }
+
+ .techs{
+     
+     display: flex;
+     flex-direction: row;
+     justify-content: center;  
+
+ }
+
+ .techs li{
+
+     padding-left: 1em;
+     font-family: Khula;
+     font-size:10pt;
+     color:#383838;
+     text-align: center;
+     
+ }
+
+ /**** End Work CSS ****/
 
 
 
