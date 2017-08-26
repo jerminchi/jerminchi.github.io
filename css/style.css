@@ -232,14 +232,6 @@ body {
 
 
 
-    @media (min-width: 200px) and (max-width: 500px){
-        
-          
-                        
-
-                    
-          }
-          
 
 
      /* The Modal (background) */
@@ -328,11 +320,11 @@ body {
  .description{
 
      font-family: Khula;
-     font-size:14pt;
+     /* font-size:14pt; */
      text-align: center;
      color:#383838;
      align-self: center;
-     max-width: 50%;
+     
 
  }
 
@@ -356,6 +348,23 @@ body {
 
  /**** End Work CSS ****/
 
+ @media (min-width: 200px) and (max-width: 500px){
+    
+      
+                    .project-img img{
+
+                        width:75%;
+                    }
+
+                    .description{
+
+                       max-width: 90%;
+                       line-height: 1.2em;
+                    }
+
+                
+      }
+      
 
 
 
