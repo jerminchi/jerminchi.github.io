@@ -355,7 +355,11 @@ body {
  /**** End Work CSS ****/
 
  @media (min-width: 200px) and (max-width: 500px){
-    
+
+                .modal-content{
+
+                    width: 90%;
+                }
       
                     .project-img img{
 
