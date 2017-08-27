@@ -59,6 +59,12 @@ body {
    
         }
 
+        a{
+
+            text-decoration: none;
+            color:black;
+        }
+
 
 
 .introduction{
@@ -90,7 +96,7 @@ body {
 .introduction p  {
 
     animation-name:slideUp;
-    animation-duration: 4s;
+    animation-duration: 2s;
     font-family: Lekton;
     font-size:16pt;
 }
