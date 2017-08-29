@@ -275,7 +275,7 @@ body {
 .close:focus {
     text-decoration: none;
     cursor: pointer;
-    opacity:0.5;
+    opacity:0.5; 
 } 
 
 
@@ -348,14 +348,14 @@ body {
      padding-right:1em;
      font-family: Khula;
      font-size:10pt;
-     color:black;
+     color:#DD4056;
      text-align: center;
      margin-bottom:4em;
-     background-color:yellow;
-     border: 1px solid white;
-     
-     
+     background-color: #311E41;;
+     box-shadow: 4px 4px #301c41;
+     border: 1px solid #DD4056;
  }
+
 
  /**** End Work CSS ****/
 
