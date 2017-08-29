@@ -75,7 +75,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
+    background-color: #311E41;
     height:100%;
 
 }
@@ -93,10 +93,11 @@ body {
             }
 }
 
-.introduction p  {
+#my-blurb {
 
-    animation-name:slideUp;
-    animation-duration: 2s;
+    color:white;
+    animation-name:fadeIn;
+    animation-duration: 5s;
     font-family: Lekton;
     font-size:16pt;
 }
@@ -121,9 +122,9 @@ body {
 
 }
     .introduction h2{
-
+        color:#DD4056;
         animation-name: slideInLeft;
-        animation-duration: 2s;
+        animation-duration: 3s;
         font-family: Candal;
         font-size: 30pt;
         text-align: center;
@@ -186,7 +187,7 @@ body {
 
         animation-name:slideInRight;
         animation-duration: 3s;
-
+        color:#DD4056;
         font-family: Candal;
         font-size: 30pt;
         text-align: center; 
@@ -196,41 +197,33 @@ body {
         
                 animation-name:fadeIn;
                 animation-duration: 5s;
-        
+                color:white;
                 font-family: Khula;
                 font-size: 20pt;
                 text-align: center; 
             }
 
-            #my-blurb{
-
-                animation-name:fadeIn;
-                animation-duration: 5s;
-
-            }
-
-            #work-word{
-
+    
+            #work-word, #contact-word{
+                color:white;
                 text-decoration: underline; 
+                transition: all 2s cubic-bezier(.23,1,.32,1);
             }
 
             #work-word:hover{
 
                 text-decoration: none;
-                background-color:rgb(192, 1, 220);
+                background-color:#DD4056;
                 color:white;
                 padding:0.1em;
             }
 
-            #contact-word{
-
-                text-decoration: underline;
-            }
-
+        
             #contact-word:hover{
             
             text-decoration: none;
-            background-color:rgb(192, 1, 220);
+            width:50%;
+            background-color:#DD4056;
             color:white;
             padding:0.1em;
 
@@ -248,13 +241,13 @@ body {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(255, 255, 255, 0.5); /* Black w/ opacity */
+    background-color:#DD4056;
 }
 
 /* Modal Content/Box */
 .modal-content {
     /* background-color: #fefefe; */
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     /* border: 1px solid #888; */
@@ -263,23 +256,27 @@ body {
 
 /* The Close Button */
 .close {
-    color: white;
-    float: right;
+    border:none;
+    background-color: #311E41;
+    position: fixed;
+    right:150px;
+    top:100px;
     font-size: 28px;
     font-weight: bold;
+    border-radius: 50%;
+}
+
+.x-button{
+
+    color:white;
 }
 
 .close:hover,
 .close:focus {
-    color: yellow;
     text-decoration: none;
     cursor: pointer;
+    opacity:0.5;
 } 
-
-
-
-
-
 
 
 
@@ -295,11 +292,14 @@ body {
  
 
  .title{
+
+    animation-name:slideUp;
+    animation-duration: 3s;
+    color:#311E41;
      font-family: Candal;
      font-size: 32pt;
      font-weight: 700;
      text-align: center;
-     color:white;
      line-height: 1em;
  }
 
