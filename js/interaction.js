@@ -11,6 +11,7 @@ var modal = document.getElementById('modal');
 
 // Get the button that opens the modal
 var btn = document.getElementById("work-word");
+var contact = document.getElementById("contact-word")
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -42,9 +43,19 @@ window.onclick = function(event) {
     }
 } 
 
-    
-    
     /**** End Button click code ****/
+
+    /* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.height = "50px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.height = "0";
+
+    
+} 
     
 
 
