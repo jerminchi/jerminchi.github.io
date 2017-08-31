@@ -177,7 +177,7 @@ a.closebtn:hover:hover{
    
     0%{
         
-        transform: translate(300px, 0px);
+        transform: translate(150px, 0px);
 
         }
         
@@ -202,7 +202,7 @@ a.closebtn:hover:hover{
         
         0%{
 
-            transform: translate(-300px, 0px);
+            transform: translate(-150px, 0px);
         }
 
 
