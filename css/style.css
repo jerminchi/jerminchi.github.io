@@ -65,6 +65,9 @@ body {
             color:black;
         }
 
+/*********************************************
+              Side Nav
+**********************************************/
 
         /* The side navigation menu */
  .sidenav {
@@ -94,8 +97,12 @@ body {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+.sidenav a:hover{
+    text-decoration: underline;
+}
+
+a.closebtn:hover:hover{
+    text-decoration: none;
 }
 
 /* Position and style the close button (top right corner) */
@@ -119,11 +126,18 @@ body {
     .sidenav a {font-size: 18px;}
 } 
 
+/*********************************************
+              End Side Nav
+**********************************************/
+
+
+/*********************************************
+             Home Page
+**********************************************/
+
 
 
 .introduction{
-
-    /* background-image: url(../img/red-dots.png); */
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -283,6 +297,15 @@ body {
 
             }
 
+/*********************************************
+              End Intro section
+**********************************************/
+
+
+/*********************************************
+              The Modal
+**********************************************/
+
 
      /* The Modal (background) */
 .modal {
@@ -302,7 +325,7 @@ body {
 .modal-content {
     /* background-color: #fefefe; */
     /* background-color: rgba(0, 0, 0, 0.5); */
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     /* border: 1px solid #888; */
     width: 80%; /* Could be more or less, depending on screen size */
@@ -333,18 +356,39 @@ body {
 } 
 
 
+/*********************************************
+              End Modal
+**********************************************/
 
 
- 
+/*********************************************
+             Work Section CSS
+**********************************************/
 
 /**** Work CSS ****/
-#project-one, #project-two, #project-three, #project-four{
-    
+
+.container{
+
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
+}
+#project-one, #project-two, #project-three, #project-four{
+    
      line-height: 1.2em;  
  }
 
+ #project-one, #project-three{
+
+    align-self: flex-start;
+ }
+
+ #project-two, #project-four{
+
+    align-self: flex-end;
+ }
+
+ 
  
 
  .title{
@@ -354,15 +398,10 @@ body {
      font-family: Candal;
      font-size: 32pt;
      font-weight: 700;
-     text-align: center;
      line-height: 1em;
  }
  
 
- .project-img{
-     
-     display: flex; 
- }
 
  .project-img img{
      
@@ -372,20 +411,32 @@ body {
  
  }
 
- .project-img a{
+ #project-one img{
+
+    width:70%;
+ }
+
+ #project-four img{
+    
+        width:70%;
+     }
+
+ /* .project-img a{
 
     display: block;
     margin: 0 auto;
- }
+ } */
 
  .description{
 
      font-family: Khula;
-     /* font-size:14pt; */
+     font-size:12pt;
      text-align: center;
      /* color:#383838; */
      color:white;
-     align-self: center;
+     text-align:  left;
+     max-width: 400px;
+ 
      
 
  }
@@ -394,7 +445,7 @@ body {
      
      display: flex;
      flex-direction: row;
-     justify-content: center;  
+ 
     
  }
 
@@ -413,7 +464,9 @@ body {
  }
 
 
- /**** End Work CSS ****/
+/*********************************************
+             End Work Section CSS
+**********************************************/
 
  @media (min-width: 200px) and (max-width: 500px){
 
@@ -427,11 +480,40 @@ body {
                         width:75%;
                     }
 
-                    .description{
+                    
 
-                       max-width: 90%;
-                       line-height: 1.2em;
+                    .container{
+
+                        align-content: center;
+                        justify-content: center;
                     }
+
+                    .title{
+
+                        align-self: center;
+                        text-align: center;
+                    }
+
+                    .project-img{
+
+                        margin:0 auto;
+                    }
+
+                    .description{
+                        
+                        max-width: 90%;
+                        line-height: 1.2em;
+                        align-self: center;
+                        text-align: center;
+                        width:100%;
+                        }
+
+                         .techs li{
+                            display:inline;
+                            margin: 0 auto;
+                        }
+
+
 
                 
       }
