@@ -140,10 +140,10 @@ a.closebtn:hover:hover{
 .introduction{
     z-index: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
-    background-color: #311E41;
+    background-color: #E8E7F6;
     height:100%;
 
 }
@@ -160,17 +160,6 @@ a.closebtn:hover:hover{
             transform: translate(0px, 0px);
             }
 }
-
-#my-blurb {
-
-    color:white;
-    animation-name:fadeIn;
-    animation-duration: 5s;
-    font-family: Lekton;
-    font-size:16pt;
-}
-
-
 
 
 @keyframes slideInLeft {
@@ -191,11 +180,16 @@ a.closebtn:hover:hover{
 }
     .introduction h2{
         color:#DD4056;
-        animation-name: slideInLeft;
+        /* animation-name: slideInLeft; */
         animation-duration: 3s;
         font-family: Candal;
-        font-size: 30pt;
+        font-size: 60pt;
         text-align: center;
+    }
+
+    #first{
+
+        color:white
     }
 
     @keyframes slideInRight {
@@ -251,25 +245,48 @@ a.closebtn:hover:hover{
         }
     }
 
+    #first{
+
+        align-self: flex-start;
+        font-size:70pt;
+        padding-left:0.5em;
+    }
+
     #my-name{
 
-        animation-name:slideInRight;
-        animation-duration: 3s;
-        color:#DD4056;
+        /* animation-name:slideInRight; */
+        /* animation-duration: 3s; */
+        align-self: flex-start;
+        color:#ED6A41;
         font-family: Candal;
-        font-size: 30pt;
+        font-size: 70pt;
         text-align: center; 
+        padding-left:0.5em;
     }
 
          #my-title{
         
                 animation-name:fadeIn;
                 animation-duration: 5s;
+                align-self: flex-start;
                 color:white;
                 font-family: Khula;
-                font-size: 20pt;
+                font-size: 30pt;
                 text-align: center; 
+                padding-left:1em;
             }
+
+            #my-blurb {
+
+                    align-self: flex-start;
+                    color:white;
+                    animation-name:fadeIn;
+                    animation-duration: 5s;
+                    font-family: Lekton;
+                    font-size:16pt;
+                    text-align:center;
+                    padding-left:1.5em;
+                }
 
     
             #work-word, #contact-word{
@@ -281,7 +298,7 @@ a.closebtn:hover:hover{
             #work-word:hover{
 
                 text-decoration: none;
-                background-color:#DD4056;
+                background-color: #ED6A41;
                 color:white;
                 padding:0.1em;
             }
@@ -291,7 +308,7 @@ a.closebtn:hover:hover{
             
             text-decoration: none;
             width:50%;
-            background-color:#DD4056;
+            background-color: #ED6A41;
             color:white;
             padding:0.1em;
 
