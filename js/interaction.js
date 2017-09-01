@@ -47,7 +47,9 @@ window.onclick = function(event) {
 
     /* Set the width of the side navigation to 250px */
 function openNav() {
-    document.getElementById("mySidenav").style.height = "50px";
+    document.getElementById("mySidenav").style.height = "150px";
+    document.getElementById("Layer_1").style.marginTop = "150px";
+    
 }
 
 /* Set the width of the side navigation to 0 */

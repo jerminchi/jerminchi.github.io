@@ -53,6 +53,92 @@ button::-moz-focus-inner { border: 0; }
               CSS for my pages
 **********************************************/
 
+@keyframes slideInRight {
+    
+    0%{
+
+        transform: translate(-150px, 0px);
+    }
+
+
+    100%{
+        
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes enlarge {
+    
+    0%{
+
+        transform: scale(0.1, 0.1);
+    }
+
+
+    65%{
+        
+        transform: scale(1.5, 1.5);
+    }
+
+    85%{
+
+        transform: scale(0.1, 0.1);
+    }
+
+    100%{
+
+        transform: scale(1, 1);
+
+    }
+}
+
+@keyframes fadeIn {
+    
+    0%{
+
+        opacity: 0;
+    }
+
+
+    100%{
+        
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    
+     0%{
+         
+         transform: translate(150px, 0px);
+ 
+         }
+         
+         
+         100%{
+                     
+          transform: translate(0px, 0px);
+ 
+         }
+ 
+ }
+
+ @keyframes slideUp {
+    
+     0%{ 
+         transform: translate(0px, 400px);
+         }
+    
+         
+         100%{
+                     
+             transform: translate(0px, 0px);
+             }
+ }
+ 
+
+ 
+
 body {
     height: 100vh;
 
@@ -135,7 +221,23 @@ a.closebtn:hover:hover{
              Home Page
 **********************************************/
 
+#Layer_1{
 
+ 
+
+    width:10%;
+    position:fixed;
+    top:10px;
+    transition: .5s;
+}
+
+.down-arrow{
+
+    animation-name: fadeIn; 
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    fill:#ED6A41;
+}
 
 .introduction{
     z-index: 1;
@@ -148,36 +250,7 @@ a.closebtn:hover:hover{
 
 }
 
-@keyframes slideUp {
-   
-    0%{ 
-        transform: translate(0px, 400px);
-        }
-   
-        
-        100%{
-                    
-            transform: translate(0px, 0px);
-            }
-}
 
-
-@keyframes slideInLeft {
-   
-    0%{
-        
-        transform: translate(150px, 0px);
-
-        }
-        
-        
-        100%{
-                    
-         transform: translate(0px, 0px);
-
-        }
-
-}
     .introduction h2{
         color:#DD4056;
         /* animation-name: slideInLeft; */
@@ -192,58 +265,7 @@ a.closebtn:hover:hover{
         color:white
     }
 
-    @keyframes slideInRight {
-        
-        0%{
-
-            transform: translate(-150px, 0px);
-        }
-
-
-        100%{
-            
-            transform: translate(0px, 0px);
-        }
-    }
-
-    @keyframes enlarge {
-        
-        0%{
-
-            transform: scale(0.1, 0.1);
-        }
-
-
-        65%{
-            
-            transform: scale(1.5, 1.5);
-        }
-
-        85%{
-
-            transform: scale(0.1, 0.1);
-        }
-
-        100%{
-
-            transform: scale(1, 1);
-
-        }
-    }
-
-    @keyframes fadeIn {
-        
-        0%{
-
-            opacity: 0;
-        }
-
-
-        100%{
-            
-            opacity: 1;
-        }
-    }
+    
 
     #first{
 
