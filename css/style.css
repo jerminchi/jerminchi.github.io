@@ -513,8 +513,8 @@ a.closebtn:hover:hover{
 #Layer_1{
     
         width:20%;
-        display: block;
-        margin: 0 auto;
+        top:10px;
+       left:50%;
     }
 
     #first{
