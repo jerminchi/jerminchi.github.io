@@ -260,15 +260,13 @@ a.closebtn:hover:hover{
         text-align: center;
     }
 
-    #first{
-
-        color:white
-    }
+ 
 
     
 
     #first{
 
+        color:white;      
         align-self: flex-start;
         font-size:70pt;
         padding-left:0.5em;
@@ -312,14 +310,15 @@ a.closebtn:hover:hover{
 
     
             #work-word, #contact-word{
-                color:white;
-                text-decoration: underline; 
+                color:#ED6A41;
+                font-family: Candal;
+                font-size: 15px;
                 transition: all 2s cubic-bezier(.23,1,.32,1);
             }
 
             #work-word:hover{
 
-                text-decoration: none;
+                text-decoration: underline; 
                 background-color: #ED6A41;
                 color:white;
                 padding:0.1em;
@@ -507,7 +506,36 @@ a.closebtn:hover:hover{
              End Work Section CSS
 **********************************************/
 
+
  @media (min-width: 200px) and (max-width: 500px){
+
+
+#Layer_1{
+    
+        width:20%;
+    }
+
+    #first{
+
+        align-self: center;
+        font-size:50pt;
+
+    }
+    
+    #my-name{
+
+        font-size:50pt;
+        align-self: center;
+    }
+
+    #my-title{
+
+        font-size: 20pt;
+        padding: 0;
+        text-align: center;
+    }
+
+
 
                 .modal-content{
 
