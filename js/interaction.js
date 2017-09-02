@@ -2,7 +2,15 @@
 var im = document.getElementById("first")
 var myName= document.getElementById("my-name")
 var myTitle = document.getElementById("my-title")
-var myBlurb = document.getElementById("my-blurb");
+var myBlurb = document.getElementById("my-blurb")
+
+//arrow on top of page   
+var isUp = false //checks if arrow is pointing up
+var svgArrow = document.getElementById("Layer_1")
+
+//arrow inside svg image
+var upArrow = document.getElementsByClassName("down-arrow")[0]
+
 
 
 
@@ -48,7 +56,7 @@ window.onclick = function(event) {
     /* Set the width of the side navigation to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.height = "150px";
-    document.getElementById("Layer_1").style.marginTop = "150px";
+    svgArrow.style.marginTop = "150px";
     
 }
 
@@ -56,8 +64,36 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.height = "0";
 
-    
 } 
     
+function handleArrow(e){
+
+    console.log(e)
+
+    
+        if(!isUp){
+        
+            console.log("im going down")
+        upArrow.style.transformOrigin="center center"
+        upArrow.style.transform="rotate(180deg)"
+        isUp = !isUp
+}
+
+
+
+else if(isUp){   
+
+    console.log("im coming up")
+
+    upArrow.style.transformOrigin="center center"
+    upArrow.style.transform="rotate(0deg)"
+    document.getElementById("mySidenav").style.height = "0px";
+    svgArrow.style.marginTop = "0px";
+    isUp = !isUp;
+}
+}
+
+//checks when arrow down transition finishes
+svgArrow.addEventListener("click", handleArrow, false)
 
 
