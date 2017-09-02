@@ -356,7 +356,7 @@ a.closebtn:hover:hover{
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color:#DD4056;
+    background-color:#ECE5F3;  
 }
 
 /* Modal Content/Box */
@@ -411,25 +411,105 @@ a.closebtn:hover:hover{
     flex-direction: column;
     align-content: flex-start;
 }
-#project-one, #project-two, #project-three, #project-four{
+
+#project-one{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    background:
+    
+    linear-gradient(
+        rgba(29, 29, 29, 0.2), 
+        rgba(29, 29, 29, 0.2)        
+      ),
+    
+    url('../img/local-shopper.png');    
+    background-repeat: no-repeat;
+    min-height:200px;
+    min-width:500px;
+    filter: blur(0px);
+    transition: 1s;
+    /* border: 4px solid white; */
+}
+
+#project-one:hover{
+
+    background:
+
+    linear-gradient(
+        rgba(29, 29, 29, 0.6), 
+        rgba(29, 29, 29, 0.6)         
+      ),
+      url('../img/local-shopper.png'); 
+      background-repeat: no-repeat;
+
+      filter:blur(3px)
+
+}
+
+#project-one .title{
+
+    align-self: center;
+    color:white;
+    font-family: Candal;
+    font-size:50pt;
+    margin-right:1em;
+    display: none;
+}
+
+#project-one .description{
+
+    position: absolute;
+    top:20%;
+    right:10%;
+    font-family: lekton;
+    align-self: center;
+    line-height:1.2em;
+    width:50%;
+    
+}
+
+#project-one .techs{
+
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+   
+}
+
+#project-one .techs li{
+
+    padding-left: 1em;
+    padding-right:1em;
+    font-family: Khula;
+    font-size:10pt;
+    color:white;
+    text-align: center;
+    background-color: #311E41;;
+    box-shadow: 4px 4px #301c41;
+    border: 1px solid #DD4056;
+}
+/* #project-one, #project-two, #project-three, #project-four{
     
      line-height: 1.2em;  
- }
+ } */
 
- #project-one, #project-three{
+ /* #project-one, #project-three{
 
     align-self: flex-start;
- }
+ } */
 
- #project-two, #project-four{
+ /* #project-two, #project-four{
 
-    align-self: flex-end;
- }
+    /* align-self: flex-end; 
+ } 
 
  
  
 
- .title{
+ /* .title{
     animation-name:slideUp;
     animation-duration: 3s;
     color:#311E41;
@@ -437,27 +517,27 @@ a.closebtn:hover:hover{
      font-size: 32pt;
      font-weight: 700;
      line-height: 1em;
- }
+ } */
  
 
 
- .project-img img{
+ /* .project-img img{
      
     display: block;
     margin: 0 auto;
     width:400px;
  
- }
-
+ } */
+/* 
  #project-one img{
 
     width:70%;
- }
+ } */
 
- #project-four img{
+ /* #project-four img{
     
         width:70%;
-     }
+     } */
 
  /* .project-img a{
 
@@ -465,29 +545,29 @@ a.closebtn:hover:hover{
     margin: 0 auto;
  } */
 
- .description{
+ /* .description{
 
      font-family: Khula;
      font-size:12pt;
-     text-align: center;
+     text-align: center; */
      /* color:#383838; */
-     color:white;
+     /* color:white;
      text-align:  left;
      max-width: 400px;
  
      
 
- }
+ } */
 
- .techs{
+ /* .techs{
      
      display: flex;
      flex-direction: row;
  
     
- }
+ } */
 
- .techs li{
+ /* .techs li{
 
      padding-left: 1em;
      padding-right:1em;
@@ -499,7 +579,7 @@ a.closebtn:hover:hover{
      background-color: #311E41;;
      box-shadow: 4px 4px #301c41;
      border: 1px solid #DD4056;
- }
+ } */
 
 
 /*********************************************

@@ -2,7 +2,7 @@
 var im = document.getElementById("first")
 var myName= document.getElementById("my-name")
 var myTitle = document.getElementById("my-title")
-var myBlurb = document.getElementById("my-blurb")
+// var myBlurb = document.getElementById("my-blurb")
 
 //arrow on top of page   
 var isUp = false //checks if arrow is pointing up
@@ -29,7 +29,7 @@ btn.onclick = function() {
     im.style.display = "none"
     myName.style.display = "none"
     myTitle.style.display = "none"
-    myBlurb.style.display = "none"
+    // myBlurb.style.display = "none"
     
     modal.style.display = "block";
 }
