@@ -423,8 +423,8 @@ a.closebtn:hover:hover{
     background:
     
     linear-gradient(
-        rgba(29, 29, 29, 0.2), 
-        rgba(29, 29, 29, 0.2)        
+        rgba(29, 29, 29, 0.1), 
+        rgba(29, 29, 29, 0.1)        
       ),
     
     url('../img/local-shopper.png');    
@@ -441,13 +441,13 @@ a.closebtn:hover:hover{
     background:
 
     linear-gradient(
-        rgba(29, 29, 29, 0.6), 
-        rgba(29, 29, 29, 0.6)         
+        rgba(29, 29, 29, 0.3), 
+        rgba(29, 29, 29, 0.3)         
       ),
       url('../img/local-shopper.png'); 
       background-repeat: no-repeat;
 
-      filter:blur(3px)
+      /* filter:blur(3px) */
 
 }
 
@@ -457,8 +457,7 @@ a.closebtn:hover:hover{
     color:white;
     font-family: Candal;
     font-size:50pt;
-    margin-right:1em;
-    display: none;
+    /* display: none; */
 }
 
 #project-one .description{
@@ -470,6 +469,7 @@ a.closebtn:hover:hover{
     align-self: center;
     line-height:1.2em;
     width:50%;
+    display: none;
     
 }
 
@@ -487,11 +487,11 @@ a.closebtn:hover:hover{
     padding-right:1em;
     font-family: Khula;
     font-size:10pt;
-    color:white;
+    color:#ED6A41;
     text-align: center;
-    background-color: #ED6A41;
+    background-color: white;
     box-shadow: 4px 4px #ED6A41;
-    border: 1px solid white;
+    border: 1px solid #ED6A41;
 }
 /* #project-one, #project-two, #project-three, #project-four{
     

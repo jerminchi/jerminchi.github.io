@@ -4,12 +4,16 @@ var myName= document.getElementById("my-name")
 var myTitle = document.getElementById("my-title")
 // var myBlurb = document.getElementById("my-blurb")
 
-//arrow on top of page   
+var svgArrow = document.getElementById("Layer_1")//svg graphic on page
+var upArrow = document.getElementsByClassName("down-arrow")[0] //arrow inside svg image
 var isUp = false //checks if arrow is pointing up
-var svgArrow = document.getElementById("Layer_1")
 
-//arrow inside svg image
-var upArrow = document.getElementsByClassName("down-arrow")[0]
+var projOne = document.getElementById("project-one")
+var projOneTitle= document.getElementsByClassName("title")[0]
+var projOneDesc= document.getElementsByClassName("description")[0]
+
+
+var isDesc = false //checks if description is showing
 
 
 
@@ -66,9 +70,8 @@ function closeNav() {
 
 } 
     
-function handleArrow(e){
+function handleArrow(){
 
-    console.log(e)
 
     
         if(!isUp){
@@ -95,5 +98,25 @@ else if(isUp){
 
 //checks when arrow down transition finishes
 svgArrow.addEventListener("click", handleArrow, false)
+
+projOne.addEventListener("click", handleSwitch)
+
+function handleSwitch(){
+
+    if(!isDesc){
+
+        projOneTitle.style.display = "none"
+        projOneDesc.style.display = "initial"
+        isDesc = !isDesc
+    }
+
+    else{
+
+        projOneDesc.style.display = "none"
+        projOneTitle.style.display = "initial"
+        isDesc = !isDesc
+    }
+
+}
 
 
