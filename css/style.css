@@ -221,6 +221,8 @@ a.closebtn:hover:hover{
              Home Page
 **********************************************/
 
+/* The whole down svg arrow */
+
 #Layer_1{
 
  
@@ -231,12 +233,32 @@ a.closebtn:hover:hover{
     transition: .5s;
 }
 
+/* The whole diagonal svg arrow */
+#Layer_2{
+
+    display: none;
+    width:8%;
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    
+}
+
 .down-arrow{
 
     animation-name: fadeIn; 
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     fill:#ED6A41;
+}
+
+.diag-arrow{
+    
+    animation-name: fadeIn; 
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    fill:#ED6A41;
+
 }
 
 .introduction{

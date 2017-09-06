@@ -4,16 +4,18 @@ var myName= document.getElementById("my-name")
 var myTitle = document.getElementById("my-title")
 // var myBlurb = document.getElementById("my-blurb")
 
+//home page arrow vars
 var svgArrow = document.getElementById("Layer_1")//svg graphic on page
 var upArrow = document.getElementsByClassName("down-arrow")[0] //arrow inside svg image
 var isUp = false //checks if arrow is pointing up
 
+//project section vars
+var diagArr = document.getElementById("Layer_2")
 var projOne = document.getElementById("project-one")
 var projOneTitle= document.getElementsByClassName("title")[0]
 var projOneDesc= document.getElementsByClassName("description")[0]
-
-
 var isDesc = false //checks if description is showing
+var projOneTechs = document.getElementsByClassName("techs")[0]
 
 
 
@@ -40,8 +42,8 @@ btn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
 
+    modal.style.display = "none";
     im.style.display = "initial"
     myName.style.display = "initial"
     myTitle.style.display = "initial"
@@ -50,6 +52,7 @@ span.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
+
     if (event.target == modal) {
         modal.style.display = "none";
     }
@@ -59,6 +62,7 @@ window.onclick = function(event) {
 
     /* Set the width of the side navigation to 250px */
 function openNav() {
+
     document.getElementById("mySidenav").style.height = "150px";
     svgArrow.style.marginTop = "150px";
     
@@ -66,27 +70,24 @@ function openNav() {
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
+
     document.getElementById("mySidenav").style.height = "0";
 
 } 
-    
+
+
+//function to handle up and down arrow for home
 function handleArrow(){
 
-
-    
         if(!isUp){
         
-            console.log("im going down")
         upArrow.style.transformOrigin="center center"
         upArrow.style.transform="rotate(180deg)"
         isUp = !isUp
 }
 
 
-
 else if(isUp){   
-
-    console.log("im coming up")
 
     upArrow.style.transformOrigin="center center"
     upArrow.style.transform="rotate(0deg)"
@@ -98,23 +99,31 @@ else if(isUp){
 
 //checks when arrow down transition finishes
 svgArrow.addEventListener("click", handleArrow, false)
-
 projOne.addEventListener("click", handleSwitch)
 
+
+/**** Project Section JS *****/
+
+//switch when project is clicked or touched
 function handleSwitch(){
 
     if(!isDesc){
 
+        diagArr.style.display = "initial"
         projOneTitle.style.display = "none"
         projOneDesc.style.display = "initial"
         isDesc = !isDesc
+        projOneTechs.style.display = "none"
     }
 
     else{
 
+        diagArr.style.display = "none"
         projOneDesc.style.display = "none"
         projOneTitle.style.display = "initial"
         isDesc = !isDesc
+        projOneTechs.style.display = "flex"
+        
     }
 
 }
