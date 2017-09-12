@@ -238,9 +238,9 @@ a.closebtn:hover:hover{
 
     display: none;
     width:8%;
-    position:fixed;
+    position: absolute;
+    top:110px;
     right:10px;
-    bottom:10px;
     
 }
 
@@ -443,13 +443,12 @@ a.closebtn:hover:hover{
     
 
     background:
-    
+
     linear-gradient(
         rgba(29, 29, 29, 0.1), 
         rgba(29, 29, 29, 0.1)        
-      ),
-    
-    url('../img/local-shopper.png');    
+      );
+      
     background-repeat: no-repeat;
     min-height:200px;
     min-width:500px;
@@ -458,7 +457,7 @@ a.closebtn:hover:hover{
     /* border: 4px solid white; */
 }
 
-#project-one:hover{
+/* #project-one:hover{
 
     background:
 
@@ -469,14 +468,11 @@ a.closebtn:hover:hover{
       url('../img/local-shopper.png'); 
       background-repeat: no-repeat;
 
-      /* filter:blur(3px) */
-
-}
+} */
 
 #project-one .title{
 
-    align-self: center;
-    color:white;
+    color: rgb(255, 128, 89);
     font-family: Candal;
     font-size:50pt;
     /* display: none; */
@@ -644,52 +640,53 @@ a.closebtn:hover:hover{
 
 
 
-                .modal-content{
+      .modal-content{
 
-                    width: 90%;
-                }
+         width: 90%;
+     }
+     
       
-                    .project-img img{
+       .project-img img{
 
-                        width:75%;
-                    }
+        width:75%;
+          }
 
                     
+         .container{
 
-                    .container{
+            align-content: center;
+            justify-content: center;
 
-                        align-content: center;
-                        justify-content: center;
-                    }
+            }
 
-                    .title{
+            .title{
 
-                        align-self: center;
-                        text-align: center;
-                    }
+            align-self: center;
+            text-align: center;
 
-                    .project-img{
+            }
 
-                        margin:0 auto;
-                    }
+            .project-img{
 
-                    .description{
+            margin:0 auto;
+
+             }
+
+            .description{
                         
-                        max-width: 90%;
-                        line-height: 1.2em;
-                        align-self: center;
-                        text-align: center;
-                        width:100%;
-                        }
+            max-width: 90%;
+            line-height: 1.2em;
+            align-self: center;
+            text-align: center;
+            width:100%;
 
-                         .techs li{
-                            display:inline;
-                            margin: 0 auto;
-                        }
+            }
 
+            .techs li{
+            display:inline;
+            margin: 0 auto;
+            }
 
-
-                
       }
       
 

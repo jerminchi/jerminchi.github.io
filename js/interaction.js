@@ -111,18 +111,22 @@ function handleSwitch(){
 
         diagArr.style.display = "initial"
         projOneTitle.style.display = "none"
+        projOne.style.backgroundImage="url('img/local-shopper.png')" //need to check why this shows when desc is false        
         projOneDesc.style.display = "initial"
-        isDesc = !isDesc
         projOneTechs.style.display = "none"
+        isDesc = !isDesc
+      
     }
 
     else{
 
         diagArr.style.display = "none"
         projOneDesc.style.display = "none"
+        projOne.style.backgroundImage='none' // need to check why this shows when desc is true
         projOneTitle.style.display = "initial"
-        isDesc = !isDesc
         projOneTechs.style.display = "flex"
+        
+        isDesc = !isDesc
         
     }
 
