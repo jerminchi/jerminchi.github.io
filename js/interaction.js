@@ -55,6 +55,11 @@ window.onclick = function(event) {
 
     if (event.target == modal) {
         modal.style.display = "none";
+        im.style.display = "initial"
+        myName.style.display = "initial"
+        myTitle.style.display = "initial"
+        myBlurb.style.display = "initial"
+
     }
 } 
 
