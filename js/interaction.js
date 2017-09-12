@@ -28,7 +28,7 @@ var btn = document.getElementById("work-word");
 var contact = document.getElementById("contact-word")
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -41,14 +41,14 @@ btn.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+// span.onclick = function() {
 
-    modal.style.display = "none";
-    im.style.display = "initial"
-    myName.style.display = "initial"
-    myTitle.style.display = "initial"
-    myBlurb.style.display = "initial"
-}
+//     modal.style.display = "none";
+//     im.style.display = "initial"
+//     myName.style.display = "initial"
+//     myTitle.style.display = "initial"
+//     myBlurb.style.display = "initial"
+// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
