@@ -17,22 +17,7 @@ var titles
 var descriptions
 var techs
 
-// var projOne = document.getElementById("project-one")
-// var projTwo = document.getElementById("project-two")
-
-var projOneTitle = document.getElementsByClassName("title")[0]
-var projTwoTitle = document.getElementsByClassName("title")[1]
-
-var projOneDesc = document.getElementsByClassName("description")[0]
-var projTwoDesc = document.getElementsByClassName("description")[1]
-
 var isDesc = false //checks if description is showing
-
-var projOneTechs = document.getElementsByClassName("techs")[0]
-var projTwoTechs = document.getElementsByClassName("techs")[1]
-
-
-
 
 // Get the modal
 var modal = document.getElementById('modal');
@@ -130,8 +115,6 @@ function loadEvents(){
 
 //checks when arrow down transition finishes
 svgArrow.addEventListener("click", handleArrow, false)
-// projOne.addEventListener("click", handleSwitch, false)
-// projTwo.addEventListener("click", handleSwitch, false)
 
 
 /**** Project Section JS *****/
@@ -149,7 +132,7 @@ function handleSwitch(e){
         titles[idx].style.display = "none"
         projects[idx].style.backgroundImage="url('img/local-shopper.png')" //need to check why this shows when desc is false        
         descriptions[idx].style.display = "initial"
-        techs[idx].style.display = "none"
+        techs[idx].style.visibility = "hidden"
         isDesc = !isDesc
       
     }
@@ -160,7 +143,7 @@ function handleSwitch(e){
         titles[idx].style.display = "initial"
         descriptions[idx].style.display = "none"
         projects[idx].style.backgroundImage='none' // need to check why this shows when desc is true
-        techs[idx]= "flex"
+        techs[idx].style.visibility= "visible"
         isDesc = !isDesc
         
     }
