@@ -11,11 +11,25 @@ var isUp = false //checks if arrow is pointing up
 
 //project section vars
 var diagArr = document.getElementById("Layer_2")
-var projOne = document.getElementById("project-one")
-var projOneTitle= document.getElementsByClassName("title")[0]
-var projOneDesc= document.getElementsByClassName("description")[0]
+
+var projects
+var titles
+var descriptions
+var techs
+
+// var projOne = document.getElementById("project-one")
+// var projTwo = document.getElementById("project-two")
+
+var projOneTitle = document.getElementsByClassName("title")[0]
+var projTwoTitle = document.getElementsByClassName("title")[1]
+
+var projOneDesc = document.getElementsByClassName("description")[0]
+var projTwoDesc = document.getElementsByClassName("description")[1]
+
 var isDesc = false //checks if description is showing
+
 var projOneTechs = document.getElementsByClassName("techs")[0]
+var projTwoTechs = document.getElementsByClassName("techs")[1]
 
 
 
@@ -27,8 +41,7 @@ var modal = document.getElementById('modal');
 var btn = document.getElementById("work-word");
 var contact = document.getElementById("contact-word")
 
-// Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
+
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -36,19 +49,10 @@ btn.onclick = function() {
     myName.style.display = "none"
     myTitle.style.display = "none"
     // myBlurb.style.display = "none"
-    
     modal.style.display = "block";
+    loadEvents()
 }
 
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-
-//     modal.style.display = "none";
-//     im.style.display = "initial"
-//     myName.style.display = "initial"
-//     myTitle.style.display = "initial"
-//     myBlurb.style.display = "initial"
-// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -70,6 +74,8 @@ function openNav() {
 
     document.getElementById("mySidenav").style.height = "150px";
     svgArrow.style.marginTop = "150px";
+
+
     
 }
 
@@ -102,23 +108,48 @@ else if(isUp){
 }
 }
 
+
+function loadEvents(){
+    
+        console.log("loading")
+    
+        //get projects
+       projects = document.querySelectorAll('.projects')
+       titles = document.querySelectorAll(".title")
+       descriptions = document.querySelectorAll(".description")
+       techs = document.querySelectorAll(".techs")
+       
+
+       //add click events to them
+       for(var i = 0; i < projects.length; i++){
+
+       projects[i].addEventListener('click', handleSwitch, false) 
+       }
+    }
+    
+
 //checks when arrow down transition finishes
 svgArrow.addEventListener("click", handleArrow, false)
-projOne.addEventListener("click", handleSwitch)
+// projOne.addEventListener("click", handleSwitch, false)
+// projTwo.addEventListener("click", handleSwitch, false)
 
 
 /**** Project Section JS *****/
 
 //switch when project is clicked or touched
-function handleSwitch(){
+function handleSwitch(e){
+
+    var idx = Array.from(projects).indexOf(e.currentTarget)
+    console.log(e)
+    console.log(idx)
 
     if(!isDesc){
 
         diagArr.style.display = "initial"
-        projOneTitle.style.display = "none"
-        projOne.style.backgroundImage="url('img/local-shopper.png')" //need to check why this shows when desc is false        
-        projOneDesc.style.display = "initial"
-        projOneTechs.style.display = "none"
+        titles[idx].style.display = "none"
+        projects[idx].style.backgroundImage="url('img/local-shopper.png')" //need to check why this shows when desc is false        
+        descriptions[idx].style.display = "initial"
+        techs[idx].style.display = "none"
         isDesc = !isDesc
       
     }
@@ -126,11 +157,10 @@ function handleSwitch(){
     else{
 
         diagArr.style.display = "none"
-        projOneDesc.style.display = "none"
-        projOne.style.backgroundImage='none' // need to check why this shows when desc is true
-        projOneTitle.style.display = "initial"
-        projOneTechs.style.display = "flex"
-        
+        titles[idx].style.display = "initial"
+        descriptions[idx].style.display = "none"
+        projects[idx].style.backgroundImage='none' // need to check why this shows when desc is true
+        techs[idx]= "flex"
         isDesc = !isDesc
         
     }

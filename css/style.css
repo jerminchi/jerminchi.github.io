@@ -306,8 +306,8 @@ a.closebtn:hover:hover{
 
          #my-title{
         
-                animation-name:fadeIn;
-                animation-duration: 5s;
+                /* animation-name:fadeIn;
+                animation-duration: 5s; */
                 align-self: flex-start;
                 color:white;
                 font-family: Khula;
@@ -432,11 +432,10 @@ a.closebtn:hover:hover{
     align-content: flex-start;
 }
 
-#project-one{
+#project-one, #project-two{
 
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
     box-shadow: 4px 4px 2px rgba(29, 29, 29, 0.6);
     
 
@@ -455,29 +454,18 @@ a.closebtn:hover:hover{
     /* border: 4px solid white; */
 }
 
-/* #project-one:hover{
 
-    background:
-
-    linear-gradient(
-        rgba(29, 29, 29, 0.3), 
-        rgba(29, 29, 29, 0.3)         
-      ),
-      url('../img/local-shopper.png'); 
-      background-repeat: no-repeat;
-
-} */
-
-#project-one .title{
+#project-one .title, #project-two .title{
 
     color: rgb(255, 128, 89);
     font-family: Candal;
     font-size:50pt;
-    /* display: none; */
+    text-align: center;
+    
 }
 
 
-#project-one .description{
+#project-one .description, #project-two .description{
 
     position: absolute;
     top:20%;
@@ -490,7 +478,7 @@ a.closebtn:hover:hover{
     
 }
 
-#project-one .techs{
+#project-one .techs, #project-two .techs{
 
     display: flex;
     flex-direction: row;
@@ -498,7 +486,7 @@ a.closebtn:hover:hover{
    
 }
 
-#project-one .techs li{
+#project-one .techs li, #project-two .techs li{
 
     padding-left: 1em;
     padding-right:1em;
@@ -510,95 +498,7 @@ a.closebtn:hover:hover{
     box-shadow: 4px 4px #ED6A41;
     border: 1px solid #ED6A41;
 }
-/* #project-one, #project-two, #project-three, #project-four{
-    
-     line-height: 1.2em;  
- } */
 
- /* #project-one, #project-three{
-
-    align-self: flex-start;
- } */
-
- /* #project-two, #project-four{
-
-    /* align-self: flex-end; 
- } 
-
- 
- 
-
- /* .title{
-    animation-name:slideUp;
-    animation-duration: 3s;
-    color:#311E41;
-     font-family: Candal;
-     font-size: 32pt;
-     font-weight: 700;
-     line-height: 1em;
- } */
- 
-
-
- /* .project-img img{
-     
-    display: block;
-    margin: 0 auto;
-    width:400px;
- 
- } */
-/* 
- #project-one img{
-
-    width:70%;
- } */
-
- /* #project-four img{
-    
-        width:70%;
-     } */
-
- /* .project-img a{
-
-    display: block;
-    margin: 0 auto;
- } */
-
- /* .description{
-
-     font-family: Khula;
-     font-size:12pt;
-     text-align: center; */
-     /* color:#383838; */
-     /* color:white;
-     text-align:  left;
-     max-width: 400px;
- 
-     
-
- } */
-
- /* .techs{
-     
-     display: flex;
-     flex-direction: row;
- 
-    
- } */
-
- /* .techs li{
-
-     padding-left: 1em;
-     padding-right:1em;
-     font-family: Khula;
-     font-size:10pt;
-     color:#DD4056;
-     text-align: center;
-     margin-bottom:4em;
-     background-color: #311E41;;
-     box-shadow: 4px 4px #301c41;
-     border: 1px solid #DD4056;
- } */
 
 
 /*********************************************
