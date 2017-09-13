@@ -237,10 +237,8 @@ a.closebtn:hover:hover{
 #Layer_2{
 
     display: none;
-    width:8%;
-    position: absolute;
-    top:110px;
-    right:10px;
+    width:4%; 
+   transform: translate(-10px, 70px);
     
 }
 
@@ -442,12 +440,12 @@ a.closebtn:hover:hover{
     box-shadow: 4px 4px 2px rgba(29, 29, 29, 0.6);
     
 
-    background:
+    /* background: */
 
-    linear-gradient(
+    /* linear-gradient(
         rgba(29, 29, 29, 0.1), 
         rgba(29, 29, 29, 0.1)        
-      );
+      ); */
       
     background-repeat: no-repeat;
     min-height:200px;
@@ -477,6 +475,7 @@ a.closebtn:hover:hover{
     font-size:50pt;
     /* display: none; */
 }
+
 
 #project-one .description{
 
