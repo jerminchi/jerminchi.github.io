@@ -473,11 +473,8 @@ a.closebtn:hover:hover{
 
 #project-one .description, #project-two .description, #project-three .description{
 
-    position: absolute;
-    top:20%;
-    right:10%;
-    font-family: lekton;
     align-self: center;
+    font-family: lekton;
     line-height:1.2em;
     width:50%;
     display: none;
@@ -562,6 +559,15 @@ a.closebtn:hover:hover{
             align-content: center;
             justify-content: center;
 
+            }
+
+            #project-one, #project-two, #project-three{
+
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                min-width: 90%;
+                max-width:90%;
             }
 
             .title{

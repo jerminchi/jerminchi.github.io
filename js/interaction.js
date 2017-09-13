@@ -130,11 +130,10 @@ function handleSwitch(e){
 
         diagArr.style.display = "initial"
         titles[idx].style.display = "none"
-        projects[idx].style.backgroundImage="url('img/local-shopper.png')" //need to check why this shows when desc is false        
+        // projects[idx].style.backgroundImage="url('img/local-shopper.png')" //need to check why this shows when desc is false        
         descriptions[idx].style.display = "initial"
         techs[idx].style.visibility = "hidden"
         isDesc = !isDesc
-      
     }
 
     else{
@@ -142,7 +141,7 @@ function handleSwitch(e){
         diagArr.style.display = "none"
         titles[idx].style.display = "initial"
         descriptions[idx].style.display = "none"
-        projects[idx].style.backgroundImage='none' // need to check why this shows when desc is true
+        // projects[idx].style.backgroundImage='none' // need to check why this shows when desc is true
         techs[idx].style.visibility= "visible"
         isDesc = !isDesc
         
