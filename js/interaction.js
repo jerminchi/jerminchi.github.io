@@ -2,15 +2,12 @@
 var im = document.getElementById("first")
 var myName= document.getElementById("my-name")
 var myTitle = document.getElementById("my-title")
-// var myBlurb = document.getElementById("my-blurb")
 
 //home page arrow vars
 var svgArrow = document.getElementById("Layer_1")//svg graphic on page
 var upArrow = document.getElementsByClassName("down-arrow")[0] //arrow inside svg image
 var isUp = false //checks if arrow is pointing up
 
-//project section vars
-// var diagArr = document.getElementById("Layer_2")
 
 var projects
 var titles
@@ -25,11 +22,6 @@ loadEvents()
 // Get the modal
 var modal = document.getElementById('modal');
 
-// Get the button that opens the modal
-// var btn = document.getElementById("work-word");
-var contact = document.getElementById("contact-word")
-
-
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -39,7 +31,6 @@ window.onclick = function(event) {
         im.style.display = "initial"
         myName.style.display = "initial"
         myTitle.style.display = "initial"
-        myBlurb.style.display = "initial"
 
     }
 } 
@@ -51,16 +42,12 @@ function openNav() {
 
     document.getElementById("mySidenav").style.height = "150px";
     svgArrow.style.marginTop = "150px";
-    
+
+    //change opacity of main text
+    im.style.opacity = 0.4
+    myName.style.opacity = 0.4
+    myTitle.style.opacity = 0.4
 }
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-
-    document.getElementById("mySidenav").style.height = "0";
-
-} 
-
 
 //function to handle up and down arrow for home
 function handleArrow(){
@@ -69,6 +56,11 @@ function handleArrow(){
         
         upArrow.style.transformOrigin="center center"
         upArrow.style.transform="rotate(180deg)"
+
+         //change opacity of main text
+        im.style.opacity = 0.4
+        myName.style.opacity = 0.4
+        myTitle.style.opacity = 0.4
         isUp = !isUp
 }
 
@@ -79,6 +71,11 @@ else if(isUp){
     upArrow.style.transform="rotate(0deg)"
     document.getElementById("mySidenav").style.height = "0px";
     svgArrow.style.marginTop = "0px";
+
+    //revert opacity of main text
+    im.style.opacity = 1.0
+    myName.style.opacity = 1.0
+    myTitle.style.opacity = 1.0
     isUp = !isUp;
 }
 }
