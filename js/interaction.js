@@ -10,33 +10,36 @@ var upArrow = document.getElementsByClassName("down-arrow")[0] //arrow inside sv
 var isUp = false //checks if arrow is pointing up
 
 //project section vars
-var diagArr = document.getElementById("Layer_2")
+// var diagArr = document.getElementById("Layer_2")
 
 var projects
 var titles
 var descriptions
 var techs
+var buttons
 
 var isDesc = false //checks if description is showing
+
+loadEvents()
 
 // Get the modal
 var modal = document.getElementById('modal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("work-word");
+// var btn = document.getElementById("work-word");
 var contact = document.getElementById("contact-word")
 
 
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-    im.style.display = "none"
-    myName.style.display = "none"
-    myTitle.style.display = "none"
-    // myBlurb.style.display = "none"
-    modal.style.display = "block";
-    loadEvents()
-}
+// btn.onclick = function() {
+//     im.style.display = "none"
+//     myName.style.display = "none"
+//     myTitle.style.display = "none"
+//     // myBlurb.style.display = "none"
+//     modal.style.display = "block";
+//     loadEvents()
+// }
 
 
 // When the user clicks anywhere outside of the modal, close it
@@ -96,13 +99,13 @@ else if(isUp){
 
 function loadEvents(){
     
-        console.log("loading")
     
         //get projects
        projects = document.querySelectorAll('.projects')
        titles = document.querySelectorAll(".title")
        descriptions = document.querySelectorAll(".description")
        techs = document.querySelectorAll(".techs")
+       buttons = document.querySelectorAll(".goTo")
        
 
        //add click events to them
@@ -123,26 +126,47 @@ svgArrow.addEventListener("click", handleArrow, false)
 function handleSwitch(e){
 
     var idx = Array.from(projects).indexOf(e.currentTarget)
-    console.log(e)
     console.log(idx)
+
+    //sets rotation of project
+    var rotation
+
+    switch(idx){
+
+        case 0:
+        rotation = "initial"
+        break;
+
+        case 1:
+        rotation = "vertical-rl"
+        break;
+
+        case 2:
+        rotation = "initial"
+        break;
+
+        case 3:
+        rotation = "vertical-rl"
+    }
 
     if(!isDesc){
 
-        diagArr.style.display = "initial"
-        titles[idx].style.display = "none"
-        // projects[idx].style.backgroundImage="url('img/local-shopper.png')" //need to check why this shows when desc is false        
+        projects[idx].style.writingMode="initial"
+        titles[idx].style.display = "none"    
         descriptions[idx].style.display = "initial"
-        techs[idx].style.visibility = "hidden"
+        // techs[idx].style.display = "none"
+        // buttons[idx].style.display = "initial"
         isDesc = !isDesc
     }
 
     else{
 
-        diagArr.style.display = "none"
+        projects[idx].style.writingMode = rotation        
         titles[idx].style.display = "initial"
         descriptions[idx].style.display = "none"
         // projects[idx].style.backgroundImage='none' // need to check why this shows when desc is true
-        techs[idx].style.visibility= "visible"
+        // techs[idx].style.display = "flex"
+        // buttons[idx].style.display = "none"        
         isDesc = !isDesc
         
     }
