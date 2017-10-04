@@ -31,17 +31,6 @@ var contact = document.getElementById("contact-word")
 
 
 
-// When the user clicks on the button, open the modal
-// btn.onclick = function() {
-//     im.style.display = "none"
-//     myName.style.display = "none"
-//     myTitle.style.display = "none"
-//     // myBlurb.style.display = "none"
-//     modal.style.display = "block";
-//     loadEvents()
-// }
-
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
 
@@ -62,8 +51,6 @@ function openNav() {
 
     document.getElementById("mySidenav").style.height = "150px";
     svgArrow.style.marginTop = "150px";
-
-
     
 }
 
@@ -126,11 +113,11 @@ svgArrow.addEventListener("click", handleArrow, false)
 function handleSwitch(e){
 
     var idx = Array.from(projects).indexOf(e.currentTarget)
-    console.log(idx)
 
     //sets rotation of project
     var rotation
 
+    //sets correct orientation to project titles
     switch(idx){
 
         case 0:
@@ -154,8 +141,9 @@ function handleSwitch(e){
         projects[idx].style.writingMode="initial"
         titles[idx].style.display = "none"    
         descriptions[idx].style.display = "initial"
-        // techs[idx].style.display = "none"
-        // buttons[idx].style.display = "initial"
+        descriptions[idx].style.alignContent="center"
+        techs[idx].style.display = "inline"
+        buttons[idx].style.display = "initial"
         isDesc = !isDesc
     }
 
@@ -165,8 +153,8 @@ function handleSwitch(e){
         titles[idx].style.display = "initial"
         descriptions[idx].style.display = "none"
         // projects[idx].style.backgroundImage='none' // need to check why this shows when desc is true
-        // techs[idx].style.display = "flex"
-        // buttons[idx].style.display = "none"        
+        techs[idx].style.display = "none"
+        buttons[idx].style.display = "none"        
         isDesc = !isDesc
         
     }

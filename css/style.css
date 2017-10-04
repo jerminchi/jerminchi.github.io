@@ -53,405 +53,73 @@ button::-moz-focus-inner { border: 0; }
               CSS for my pages
 **********************************************/
 
-@keyframes slideInRight {
-    
-    0%{
-
-        transform: translate(-150px, 0px);
-    }
-
-
-    100%{
-        
-        transform: translate(0px, 0px);
-    }
-}
-
-@keyframes enlarge {
-    
-    0%{
-
-        transform: scale(0.1, 0.1);
-    }
-
-
-    65%{
-        
-        transform: scale(1.5, 1.5);
-    }
-
-    85%{
-
-        transform: scale(0.1, 0.1);
-    }
-
-    100%{
-
-        transform: scale(1, 1);
-
-    }
-}
-
-@keyframes fadeIn {
-    
-    0%{
-
-        opacity: 0;
-    }
-
-
-    100%{
-        
-        opacity: 1;
-    }
-}
-
-@keyframes slideInLeft {
-    
-     0%{
-         
-         transform: translate(150px, 0px);
- 
-         }
-         
-         
-         100%{
-                     
-          transform: translate(0px, 0px);
- 
-         }
- 
- }
-
- @keyframes slideUp {
-    
-     0%{ 
-         transform: translate(0px, 400px);
-         }
-    
-         
-         100%{
-                     
-             transform: translate(0px, 0px);
-             }
- }
- 
-
- 
-
-body {
-    height: 100vh;
-
-   
-        }
-
-        a{
-
-            text-decoration: none;
-            color:black;
-        }
-
-        /*********************************************
-              Container
+/*********************************************
+              Font Awesome Icons CSS
 **********************************************/
-        .container{
-            
-                display:grid;
-                height:100%;
-                grid-template-columns: 0.2fr 0.4fr;
-                grid-column-gap: 15px;
-                grid-row-gap: 10px;
-                /* background-color: #ED6A41; */
-               background-color: #015877
-            }
 
-            .main{
+.fa-github-alt{
 
-                grid-column: 1/2;
-                grid-row: 3/4;
-            }
-
-            .work{
-
-                display: grid;
-                grid-column: 2/4;
-                grid-row: 1/4;
-                min-width:800px;
-            }
-
-            #project1 .description, #project2 .description, #project3 .description, #project4 .description{
-            
-
-                    font-family: lekton;
-                    line-height:1.2em;
-                    width:50%;
-                    display: none;
-                    
-                }
-
-
-            #project1{
-
-                display: grid;
-                grid-column: 1/1;
-                grid-row: 1/2;
-                color:white;
-                justify-content: center;
-                align-content: center;
-                
-            }
-
-            #project1:hover{
-
-                background-color: #04749A;
-            }
-
-            #project2{
-
-                display: grid;
-                grid-column: 1/1;
-                grid-row: 2/4;
-                color:white;
-                min-width:200px;
-                min-height: 200px;
-                justify-content: center;
-                align-content: center;   
-                writing-mode: vertical-rl;
-            }
-
-            #project2:hover{
-
-                background-color: #04749A;
-            }
-
-            #project3{
-
-                display: grid;
-                grid-column: 2/4;
-                grid-row: 2/4;
-                color:white;
-                min-width:200px;
-                min-height: 200px;
-                justify-content: center;
-                align-content: center;         
-                
-            }
-
-            #project3:hover{
-
-                background-color: #04749A;
-            }
-
-            #project4{
-
-                display: grid;
-                grid-column: 2/4;
-                grid-row: 1/1;
-                color:white;
-                min-width:200px;
-                min-height: 200px;
-                justify-content: center;
-                align-content: center;   
-                writing-mode: vertical-rl;
-                
-                
-            }
-
-            #project4:hover{
-
-                background-color: #04749A;
-            }
-            
-
-
-          
-
+color:#ED6A41;
+}
 
 /*********************************************
-             End Container
+              End Font Awesome Icon CSS
 **********************************************/
-            
-
 /*********************************************
               Side Nav
 **********************************************/
 
         /* The side navigation menu */
- .sidenav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 0; 
-    width: 25%; /* 100% Full-height */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: white;
-    overflow-y: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-family: Candal;
-    font-size: 15px;
-    color: black;
-    transition: 0.3s
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover{
-    text-decoration: underline;
-}
-
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-top .5s;
-    padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-} 
-
-/*********************************************
-              End Side Nav
-**********************************************/
-
-
-/*********************************************
-             Home Page
-**********************************************/
-
-/* The whole down svg arrow */
-
-#Layer_1{
-
-    margin-left: 40px;
-    width:10%;
-    position:fixed;
-    top:10px;
-    transition: .5s;
-}
-
-/* The whole diagonal svg arrow */
-#Layer_2{
-
-    display: none;
-    width:4%; 
-   transform: translate(-10px, 70px);
-    
-}
-
-.down-arrow{
-
-    animation-name: fadeIn; 
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    fill:white;
-}
-
-.diag-arrow{
-    
-    animation-name: fadeIn; 
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    fill:white;
-
-}
-
-.introduction{
-    z-index: 1;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    background-color: #ED6A41;
-    height:100%;
-
-}
-
-
-    .introduction h2{
-        color:#DD4056;
-        /* animation-name: slideInLeft; */
-        animation-duration: 3s;
-        font-family: Candal;
-        font-size: 60pt;
-        text-align: center;
-    }
-
- 
-    #first{
-
-        color:white; 
-        font-size: 40pt;  
-        font-family: Candal;   
-        text-align: center;
-    }
-
-    #my-name{
-
-        /* color:white; */
-        /* color:#59ffee; */
-        color:#ED6A41;
-        font-family: Candal;
-        font-size: 70pt;
-        text-align: center;
-    }
-
-         #my-title{
+        .sidenav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 0; 
+            width: 25%; /* 100% Full-height */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0;
+            left: 0;
+            background-color: white;
+            overflow-y: hidden; /* Disable horizontal scroll */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        }
         
-                /* animation-name:fadeIn;
-                animation-duration: 5s; */
-             
-                color:white;
-                font-family: Khula;
-                font-size: 20pt;
-                text-align: center;
-            }
-
-
-    
-            #work-word, #contact-word{
-                color:#ED6A41;
-                font-family: Candal;
-                font-size: 15px;
-                transition: all 2s cubic-bezier(.23,1,.32,1);
-            }
-
-            #work-word:hover{
-
-                text-decoration: underline; 
-                background-color: #ED6A41;
-                color:white;
-                padding:0.1em;
-            }
-
         
-            #contact-word:hover{
-            
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 8px;
             text-decoration: none;
-            width:50%;
-            background-color: #ED6A41;
-            color:white;
-            padding:0.1em;
+            font-family: Candal;
+            font-size: 15px;
+            color:#ED6A41;
+            transition: 0.3s
+        }
+        
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover{
+            text-decoration: underline;
+        }
+        
+        
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+            transition: margin-top .5s;
+            padding: 20px;
+        }
+        
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        } 
+        
+        /*********************************************
+                      End Side Nav
+        **********************************************/
 
-            }
 
-/*********************************************
-              End Intro section
-**********************************************/
-
-
-/*********************************************
+        /*********************************************
               The Modal
 **********************************************/
 
@@ -510,94 +178,262 @@ body {
 **********************************************/
 
 
+
+
+@keyframes fadeIn {
+    
+    0%{
+
+        opacity: 0;
+    }
+
+
+    100%{
+        
+        opacity: 1;
+    }
+}
+
+
+
+body {
+    height: 100vh;
+
+   
+        }
+
+        a{
+
+            text-decoration: none;
+            color:black;
+        }
+
+/*********************************************
+              Container
+**********************************************/
+
+/* The whole down svg arrow */
+
+#Layer_1{
+    
+        margin-left: 40px;
+        width:10%;
+        position:fixed;
+        top:10px;
+        transition: .5s;
+    }
+
+    .down-arrow{
+        
+            animation-name: fadeIn; 
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            fill:white;
+        }
+
+
+
+    #first{
+        
+                color:white; 
+                font-size: 40pt;  
+                font-family: Candal;   
+                text-align: center;
+            }
+        
+            #my-name{
+        
+                /* color:white; */
+                /* color:#59ffee; */
+                color:#ED6A41;
+                font-family: Candal;
+                font-size: 70pt;
+                text-align: center;
+            }
+        
+                 #my-title{
+                
+                        /* animation-name:fadeIn;
+                        animation-duration: 5s; */
+                     
+                        color:white;
+                        font-family: Khula;
+                        font-size: 20pt;
+                        text-align: center;
+                    }
+
+    
+        .container{
+            
+                display:grid;
+                height:100%;
+                grid-template-columns: 0.2fr 0.4fr;
+                grid-column-gap: 15px;
+                grid-row-gap: 10px;
+                /* background-color: #ED6A41; */
+               background-color: #015877
+            }
+
+            .main{
+
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+
+            .work{
+
+                display: grid;
+                grid-column: 2/4;
+                grid-row: 1/4;
+                min-width:800px;
+            }
+
+            #project1 .description, #project2 .description, #project3 .description, #project4 .description{
+            
+
+                    font-family: lekton;
+                    font-size:12pt;
+                    line-height:1.2em;
+                    max-width:55%;
+                    text-align: center;
+                    margin: 0 auto;
+                    /* width:50%; */
+                    display: none;
+                    
+                }
+
+                #project1 .techs, #project2 .techs, #project3 .techs, #project4 .techs{
+
+                        display: none;
+                        padding: 1em 0 1em 0;
+                        margin: 0 auto;
+                       
+                    }
+
+                #project1 .techs li, #project2 .techs li, #project3 .techs li, #project4 li{
+                        
+                        display: inline;
+                        font-family: Khula;
+                        font-size:10pt;
+                        color:#ED6A41;
+                        
+                       
+                        border: 1px solid #ED6A41;
+                    }
+
+                    .p-links{
+
+                        text-decoration: none;
+                        margin:0 auto;
+                    }
+
+                        .goTo{
+
+                        display: none;
+                        background-color:#ED6A41;
+                        color: white;       
+                        border:none; 
+                        max-height: 400px;
+                        max-width: 400px;
+                        padding:2em;
+                        margin: 0 auto;
+                       
+                        
+                        }
+
+
+            #project1{
+
+                display: grid;
+                grid-column: 1/1;
+                grid-row: 1/2;
+                color:white;
+                justify-content: center;
+                align-content: center;
+                
+            }
+
+            #project1:hover{
+
+                background-color: #04749A;
+            }
+
+            #project2{
+
+                display: grid;
+                grid-column: 1/1;
+                grid-row: 2/4;
+                color:white;
+                /* min-width:200px;
+                min-height: 200px; */
+                justify-content: center;
+                align-content: center;   
+                writing-mode: vertical-rl;
+            }
+
+            #project2:hover{
+
+                background-color: #04749A;
+            }
+
+            #project3{
+
+                display: grid;
+                grid-column: 2/4;
+                grid-row: 2/4;
+                color:white;
+                /* min-width:200px;
+                min-height: 200px; */
+                justify-content: center;
+                align-content: center;         
+                
+            }
+
+            #project3:hover{
+
+                background-color: #04749A;
+            }
+
+            #project4{
+
+                display: grid;
+                grid-column: 2/4;
+                grid-row: 1/1;
+                color:white;
+                /* min-width:200px;
+                min-height: 200px; */
+                justify-content: center;
+                align-content: center;   
+                writing-mode: vertical-rl;
+                
+                
+            }
+
+            #project4:hover{
+
+                background-color: #04749A;
+            }
+            
+
+
+          
+
+
+/*********************************************
+             End Container
+**********************************************/
+            
+
+
+
+
+
 /*********************************************
              Work Section CSS
 **********************************************/
 
-/**** Work CSS ****/
 
 
-
-#project-one, #project-two, #project-three{
-
-    display: flex;
-    flex-direction: column;
-    box-shadow: 4px 4px 2px rgba(29, 29, 29, 0.6);
-    
-
-    /* background: */
-
-    /* linear-gradient(
-        rgba(29, 29, 29, 0.1), 
-        rgba(29, 29, 29, 0.1)        
-      ); */
-      
-    background-repeat: no-repeat;
-    min-height:200px;
-    min-width:500px;
-    filter: blur(0px);
-    transition: 1s;
-    /* border: 4px solid white; */
-}
-
-
-#project-one .title, #project-two .title, #project-three .title{
-
-    color: rgb(255, 128, 89);
-    font-family: Candal;
-    font-size:50pt;
-    text-align: center;
-    text-shadow: 2px 5px 2px rgb(248, 95, 49);
-    
-}
-
-
-#project-one, #project-two{
-
-    margin-bottom: 2em;
-}
-
-#project-one .description, #project-two .description, #project-three .description{
-
-    align-self: center;
-    font-family: lekton;
-    line-height:1.2em;
-    width:50%;
-    display: none;
-    
-}
-
-#project-one .techs, #project-two .techs, #project-three .techs{
-
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-   
-}
-
-#project-one .techs li, #project-two .techs li, #project-three .techs{
-
-    padding-left: 1em;
-    padding-right:1em;
-    font-family: Khula;
-    font-size:10pt;
-    color:#ED6A41;
-    text-align: center;
-    background-color: white;
-    box-shadow: 4px 4px #ED6A41;
-    border: 1px solid #ED6A41;
-}
-
-.goTo{
-
-    font-size:100pt;
-    background-color:#ED6A41;
-    color:white;        
-    align-self:center; 
-    border:none; 
-    display: none;
-
-}
 
 
 
@@ -609,85 +445,6 @@ body {
  @media (min-width: 200px) and (max-width: 500px){
 
 
-#Layer_1{
-    
-        width:20%;
-        top:10px;
-       left:50%;
-       transform: translate(-50%);
-    }
-
-    #first{
-
-        align-self: center;
-        font-size:50pt;
-
-    }
-    
-    #my-name{
-
-        font-size:50pt;
-        align-self: center;
-    }
-
-    #my-title{
-
-        font-size: 20pt;
-        padding: 0;
-        text-align: center;
-    }
-
-
-
-      .modal-content{
-
-         width: 90%;
-     }
-     
-      
-       .project-img img{
-
-        width:75%;
-          }
-
-                    
-
-            #project-one, #project-two, #project-three{
-
-                display: flex;
-                flex-direction: column;
-                align-self: center;
-                min-width: 90%;
-                max-width:90%;
-            }
-
-            .title{
-
-            align-self: center;
-            text-align: center;
-
-            }
-
-            .project-img{
-
-            margin:0 auto;
-
-             }
-
-            .description{
-                        
-            max-width: 90%;
-            line-height: 1.2em;
-            align-self: center;
-            text-align: center;
-            font-size:9pt;
-
-            }
-
-            .techs li{
-            display:inline;
-            margin: 0 auto;
-            }
 
       }
       
