@@ -53,4 +53,16 @@ body{
     background-color: #015877;
     height:100vh;
    
+    
+}
+
+a{
+
+    color:orange;
+}
+
+#project1, #project2, #project3, #project4, #project5, #project6, #project7{
+
+    color:white;
+    font-size:20pt;
 }
