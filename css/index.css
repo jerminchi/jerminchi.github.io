@@ -76,11 +76,15 @@
     }
 }
 
-body {
+
+
+html, body{
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    height:100%;
+    width:100%;
 }
 
 * {
@@ -91,7 +95,12 @@ body {
 .container {
     padding: 0 20px 20px 20px;
     margin: 0 auto;
-    
+      
+}
+
+.beginning{
+
+    height:100vh;
 }
 
 @media (min-width: 768px) {
@@ -152,17 +161,39 @@ body {
     background-color: black;
 }
 
+.header-container nav{
+
+    display:flex;  
+    justify-content: flex-end;
+}
+
+.header-container ul{
+
+    display:flex; 
+    color:white; 
+    list-style:none
+}
+
+.header-container ul li{
+
+    padding-right: 10px;
+}
+
 .header-container__img {
+    background: url(../img/hero-img.jpg) no-repeat;
+    filter: grayscale(100%);
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -100
 }
 
 .lead {
-    padding: 30px 0 100px
+    padding: 30px 0 100px;
+    
+   
 }
 
 @media (min-width: 768px) {
@@ -187,6 +218,7 @@ body {
     .lead__heading {
         font-size: 55px
     }
+    
 }
 
 .lead__sub {
@@ -225,7 +257,8 @@ body {
 .project {
     overflow: hidden;
     margin-bottom: 30px;
-    text-align: center
+    text-align: center;
+   
 }
 
 @media (min-width: 768px) {
