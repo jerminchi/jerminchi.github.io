@@ -102,9 +102,6 @@ html, body{
 
 .beginning{
 
-    height:100vh;
-    background-color: #000;
-    padding:20px;
     
 }
 
@@ -128,11 +125,11 @@ html, body{
     text-decoration: none;
     background: transparent;
     color:#ffffff;
-    background-color: #f04;
+    background-color: #1bbcfc;
 }
 
 .btn--primary {
-    background: #f04;
+    background: #1bbcfc;
     color: #fff
 }
 
@@ -151,12 +148,12 @@ html, body{
     display: inline-block;
     padding: 4px 8px;
     font-size: 12px;
-    border: 2px solid #f04;
+    border: 2px solid #1bbcfc;
     color:#000000;
 }
 
 .testimonial {
-    border-left: 1px solid #f04;
+    border-left: 1px solid #1bbcfc;
     padding: 15px 15px
 }
 
@@ -164,15 +161,25 @@ html, body{
     margin-top: 0
 }
 
+
+
 .header-container{
 
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    padding:20px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(/img/bg.jpg);
+      background-size: cover;
 }
 
 .header-container nav{
 
-    display:flex;  
-    justify-content: flex-end;
+    align-self: flex-end;
 }
 
 .header-container ul{
@@ -187,16 +194,17 @@ html, body{
     padding-right: 10px;
 }
 
-.header-container__img {
-    background: url(../img/hero-img.png) no-repeat;
-    filter: grayscale(100%);
-    position: fixed;
-    top: 0;
-    left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -100
+.header-container h1{
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-items: center;
+    justify-content: center;
+    
 }
+
+
 
 .lead {
     padding: 30px 0 100px;
@@ -217,18 +225,24 @@ html, body{
     animation: slideUp 750ms both;
     font-size: 50pt;
     vertical-align: baseline;
+    color:white;
   
 }
 
 .my-name{
 
-    color:#f04;
+    color:#1bbcfc;
     font-size: 50pt;
 }
 
 @media (min-width: 460px) {
     .lead__heading {
         font-size: 55px
+    }
+
+    .my-name{
+
+        font-size: 30pt;
     }
 
 
@@ -238,6 +252,8 @@ html, body{
 .lead__sub {
     display: flex;
     align-self: center;
+    align-content: center;
+    justify-content: center;
     -webkit-animation: slideDown 750ms both;
     animation: slideDown 750ms both;
     font-size: 16pt;
@@ -245,6 +261,7 @@ html, body{
     margin-bottom: 30px;
     padding-right:10%;
     padding-left:10%;
+    color:white;
 
 }
 
@@ -268,7 +285,7 @@ html, body{
 
 .socials__link :hover{
 
-    color: #f04;
+    color: #1bbcfc;
 }
 
 
@@ -364,7 +381,7 @@ html, body{
     -webkit-animation: slideUp 750ms both;
     animation: slideUp 750ms both;
     border: 1px solid #eaeaea;
-    border-top: 2px solid #f04;
+    border-top: 2px solid #1bbcfc;
     color: #222;
     display: inline-block;
     font-size: 13px;
@@ -447,5 +464,5 @@ html, body{
 
 .footer__title {
     margin-top: 0;
-    color: #f04
+    color: #1bbcfc;
 }
