@@ -78,6 +78,7 @@
 
 
 
+
 html, body{
     margin: 0;
     padding: 0;
@@ -94,6 +95,17 @@ html, body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
 }
 
+a{
+
+    text-decoration: none;
+    color:white;
+    padding:5px;
+}
+
+a:hover{
+
+    text-decoration: underline;
+}
 .container {
     padding: 0 20px 20px 20px;
     margin: 0 auto;
@@ -125,11 +137,11 @@ html, body{
     text-decoration: none;
     background: transparent;
     color:#ffffff;
-    background-color: #1bbcfc;
+    background-color: rgb(255, 102, 31);;
 }
 
 .btn--primary {
-    background: #1bbcfc;
+    background: rgb(255, 102, 31);;
     color: #fff
 }
 
@@ -148,12 +160,12 @@ html, body{
     display: inline-block;
     padding: 4px 8px;
     font-size: 12px;
-    border: 2px solid #1bbcfc;
+    border: 2px solid rgb(255, 102, 31);;
     color:#000000;
 }
 
 .testimonial {
-    border-left: 1px solid #1bbcfc;
+    border-left: 1px solid rgb(255, 102, 31);
     padding: 15px 15px
 }
 
@@ -167,6 +179,7 @@ html, body{
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height:100vh;
     padding:20px;
     background: linear-gradient(
@@ -178,20 +191,29 @@ html, body{
 }
 
 .header-container nav{
-
-    align-self: flex-end;
+    display: flex;
+    align-self: center;
+    align-content: center;
 }
 
 .header-container ul{
 
     display:flex; 
     color:white; 
-    list-style:none
+    list-style:none;
+    padding:0;
 }
 
 .header-container ul li{
 
-    padding-right: 10px;
+    padding: 5px;
+    
+}
+
+nav ul li:hover{
+
+    text-decoration: underline;
+    
 }
 
 .header-container h1{
@@ -226,12 +248,14 @@ html, body{
     font-size: 50pt;
     vertical-align: baseline;
     color:white;
+    text-align: center;
   
 }
 
 .my-name{
-
-    color:#1bbcfc;
+    
+    color:rgb(255, 102, 31);;
+    
     font-size: 50pt;
 }
 
@@ -285,7 +309,7 @@ html, body{
 
 .socials__link :hover{
 
-    color: #1bbcfc;
+    color: rgb(255, 102, 31);
 }
 
 
@@ -381,7 +405,7 @@ html, body{
     -webkit-animation: slideUp 750ms both;
     animation: slideUp 750ms both;
     border: 1px solid #eaeaea;
-    border-top: 2px solid #1bbcfc;
+    border-top: 2px solid rgb(255, 102, 31);
     color: #222;
     display: inline-block;
     font-size: 13px;
@@ -464,5 +488,23 @@ html, body{
 
 .footer__title {
     margin-top: 0;
-    color: #1bbcfc;
+    color: rgb(255, 102, 31);
 }
+
+.socials__link i{
+
+    transition: all .45s cubic-bezier(.86,0,.07,1);
+    transition-property: all;
+    transition-duration: 0.45s;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-delay: 0s;
+}
+
+.socials__link i:hover{
+    
+        transition: all .60s cubic-bezier(.86,0,.07,1);
+        transition-property: all;
+        transition-duration: 0.45s;
+        transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+        transition-delay: 0s;
+    }
