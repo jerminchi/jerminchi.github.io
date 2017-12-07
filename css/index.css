@@ -314,7 +314,7 @@ nav ul li:hover{
 
 
 
-#project {
+.project {
     overflow: hidden;
     margin-bottom: 30px;
     text-align: center;
@@ -322,7 +322,7 @@ nav ul li:hover{
 }
 
 @media (min-width: 768px) {
-    #project {
+    .project {
         text-align: left
     }
 }
@@ -370,13 +370,13 @@ nav ul li:hover{
 }
 
 @media (min-width: 768px) {
-    #project:nth-child(even) .project__img-container {
+    .project:nth-child(even) .project__img-container {
         float: right
     }
 }
 
 @media (min-width: 768px) {
-    #project:nth-child(even) .project__details {
+    .project:nth-child(even) .project__details {
         margin-left: 0;
         margin-right: 300px
     }
