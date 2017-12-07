@@ -102,10 +102,10 @@ a{
     padding:5px;
 }
 
-a:hover{
-
-    text-decoration: underline;
-}
+nav a:hover{
+    
+        text-decoration: underline;
+    }
 .container {
     padding: 0 20px 20px 20px;
     margin: 0 auto;
@@ -259,14 +259,14 @@ nav ul li:hover{
     font-size: 50pt;
 }
 
-@media (min-width: 460px) {
+@media (min-width: 360px) {
     .lead__heading {
-        font-size: 55px
+        font-size: 50px
     }
 
     .my-name{
 
-        font-size: 30pt;
+        font-size: 28pt;
     }
 
 
@@ -280,7 +280,7 @@ nav ul li:hover{
     justify-content: center;
     -webkit-animation: slideDown 750ms both;
     animation: slideDown 750ms both;
-    font-size: 16pt;
+    font-size: 14pt;
     line-height: 140%;
     margin-bottom: 30px;
     padding-right:10%;
@@ -314,7 +314,7 @@ nav ul li:hover{
 
 
 
-.project {
+#project {
     overflow: hidden;
     margin-bottom: 30px;
     text-align: center;
@@ -322,7 +322,7 @@ nav ul li:hover{
 }
 
 @media (min-width: 768px) {
-    .project {
+    #project {
         text-align: left
     }
 }
@@ -370,13 +370,13 @@ nav ul li:hover{
 }
 
 @media (min-width: 768px) {
-    .project:nth-child(even) .project__img-container {
+    #project:nth-child(even) .project__img-container {
         float: right
     }
 }
 
 @media (min-width: 768px) {
-    .project:nth-child(even) .project__details {
+    #project:nth-child(even) .project__details {
         margin-left: 0;
         margin-right: 300px
     }
