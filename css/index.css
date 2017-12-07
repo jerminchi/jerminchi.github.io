@@ -275,6 +275,7 @@ nav ul li:hover{
 
 .lead__sub {
     display: flex;
+    text-align: center;
     align-self: center;
     align-content: center;
     justify-content: center;
