@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Jermaine Pinckney</title>
     <link href="css/index.css" rel="stylesheet">
-    <link rel='stylesheet' href='font/typicons.min.css' />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="fonts/themify-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 
 <body>
@@ -15,15 +15,16 @@
 
         
     <div class="intro-info">
-        <h1 class="lead__heading">I AM J E R M A I N E</h1>
+        <h1 class="lead__heading">I AM JERMAINE</h1>
         <h2 class="lead__sub">A Frontend Developer</h2>
         <p>I create beautiful and interactive experiences.</p>
 
         <div class="top-social">
 
-                <i class="typcn typcn-social-linkedin" aria-hidden="true"></i>
-                <i class="typcn typcn-social-github" aria-hidden="true"></i>
-                <i class="typcn typcn-mail" aria-hidden="true"></i>
+
+                <i class="ti-linkedin"></i>
+                <i class="ti-github"></i>
+                <i class="ti-email"></i>
         </div>
 
         </div>
@@ -45,94 +46,83 @@
         
         <div class="project-container">
             
+            <!-- Browsejoy Modal -->
+            <div class="project" data-toggle="modal" data-target="#browsejoy">
 
-            <div class="project">
+                
+                <div class="modal fade" id="browsejoy" tabindex="-1" role="dialog" aria-labelledby="browsejoyCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                            <h5 class="modal-title" id="exampleModalCenterTitle">BrowseJoy</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+
+                            <div class="project-snapshot">
+
+                                <h1>Client</h1>
+                                <p>Browsejoy</p>
+
+                                <h1>What I did</h1>
+                                <p>Use HTML,CSS, and React to build a lander page + make edits for client.</p>
+
+                                <h1>Tech</h1>
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript(ES6)</li>
+                                    <li>React</li>
+                                </ul>
+
+                            </div> 
+
+                            <div class="project-description">
+
+                                    <h1 class="project-snap">Get rewarded to watch ads</h1>
+                                    <p>Browsejoy is a platform where you will be rewarded by watching ads and filling out surveys</p>
+                                    <button class="goTo">Live</button>
+
+                                <h2>Process</h2>
+                                <p>My process for developing this landing page was straightforward, however I did learn a few things as far as interacting with the client, and working on an exisiting codebase.</p>
+
+                                <h2>01. Finding the client</h2>
+                                <p>I initially found the client online through a forum. They needed help with the frontend of their site since they were primarily a backend developer. Before anything, the client wanted to know if I knew React, see examples of my work, and my github. Once I showed these items, we decided to schedule a video call.</p>
+
+
+                                <h2>02. Client's Request</h2>
+                                <p>During the video call, the client explained that they wanted a revamp of their homepage, with a few ideas. After the video call I got to work doing some research and began to look through the code.</p>
+
+                                <h2>03. Getting started</h2>
+                                <p>Initially when I looked through the code, I felt overwhelmed. The client's project was surprisingly well developed with React + Redux. I took a moment to relax then began to look through the code to get a feel where everything is, and to get a sense of their coding style. If I didn't know where or how a particular component connected to one another, I would ask the client a question, and they explained it to me. </p>
+                                    
+                            </div>
+
+
+                           
+                            
+                            </div>
+                        
+                        </div>
+                        </div>
+                    </div>
+
+            </div> <!-- End Browsejoy Modal -->
+
             
-                <div class="project__details">
-                    <h2 class="project__name">
-                        Travel Site
-                    </h2>
-                    <div class="skill-tags">
-                    
-                        <div class="skill-tag">ReactJS</div>
-                        <div class="skill-tag">React Router</div>
-                        <div class="skill-tag">Webpack</div>
-                      
-                    </div>
-
-                    <p>
-                            Travel Site is a website created in React at a one day hackathon.
-                        <div>
-                            <a class="btn" href="http://jermainepinckney.com/travel-site/#/home" target="_blank">View Project</a>
-                        </div>
-                    </p>
-                </div>
-            </div>
 
 
             <div class="project">
-            
-                <div class="project__details">
-                    <h2 class="project__name">
-                        Reddit Viewer
-                    </h2>
-                    <div class="skill-tags">
-                    
-                        <div class="skill-tag">JavaScript</div>
-                      
-                    </div>
-
-                    <p>
-                            Reddit Viewer is a web application that gets the feed from a sub reddit and displays it in a nice and clean way. Users are able to favorite posts.
-                        <div>
-                            <a class="btn" href="http://jermainepinckney.com/Reddit-Viewer/" target="_blank">View Project</a>
-                        </div>
-                    </p>
-                </div>
+                <h1>Super Run Dog</h1>
             </div>
 
 
-            <div class="project">
-               
-                <div class="project__details">
-                    <h2 class="project__name">
-                        Local Shopper
-                    </h2>
-                    <div class="skill-tags">
-                        <div class="skill-tag">AngularJS</div>
-                        <div class="skill-tag">Firebase</div>
-                        <div class="skill-tag">Ionic</div>
-                    </div>
-                    <p>
-                            Local Shopper is a one stop shop for all your local grocery stores. It lets consumers easily choose items they would like, and place an order. 
-                        <div>
-                            <a class="btn" href="https://github.com/Ch1bi/local-shopper" target="_blank">View Project</a>
-                        </div>
-                    </p>
-                </div>
-            </div>
+            <div class="project"></div>
 
-            <div class="project">
-                    
-                     <div class="project__details">
-                         <h2 class="project__name">
-                            PayUp
-                         </h2>
-                         <div class="skill-tags">
-                             <div class="skill-tag">Android</div>
-                             <div class="skill-tag">Java</div>
-                             <div class="skill-tag">Illustrator</div>
-                         </div>
-                         <p>
-                                PayUp is a debt management app used to keep track of debts owed.
-                             <div>
-                                 <a class="btn" href="https://play.google.com/store/apps/details?id=com.ch1bi.payup" target="_blank">View Project</a>
-                             </div>
-                         </p>
-                     </div>
-                 </div>
-
-        </div>
+            <div class="project"></div>
 
 
         <div class="container">
@@ -168,6 +158,10 @@
                  </div>
              </div>      
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 
 </html>
