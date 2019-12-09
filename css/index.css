@@ -18,16 +18,25 @@ a:focus {
 
 p {
   color: #fff;
+  font-size: 1.2rem;
+  opacity: 0.7;
 }
-h1,
-h3 {
+h1 {
   color: #fff;
   font-weight: 700;
   font-size: 1.3rem;
 }
 
+h3 {
+  opacity: 0.7;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
 body {
-  background-color: rgb(115, 13, 231);
+  /* background-color: rgb(115, 13, 231); */
+  background: linear-gradient(rgb(115, 13, 231), #e66465);
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
 }
@@ -63,8 +72,15 @@ body {
 .github-container > span,
 .linkedin-container > span,
 .mail-container > span {
-  display: none;
-  /* add transition for hover state */
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  padding-left: 10px;
+}
+
+.github-container > span:hover,
+.linkedin-container > span:hover,
+.mail-container > span:hover {
+  opacity: 1;
 }
 
 /* intro section */
@@ -88,8 +104,6 @@ body {
 .intro-wrapper > p {
   text-align: center;
   font-size: 40px;
-  line-height: 1.4;
-  opacity: 0.7;
 }
 
 /* About section */
@@ -160,8 +174,8 @@ body {
 }
 
 .sol-wrapper {
-  background: url(../img/sol.png) center;
-  object-fit: contain;
+  background: url(../img/sol.png) center no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
@@ -185,8 +199,8 @@ body {
 }
 
 .bio-wrapper {
-  background: url(../img/bioe.png) center;
-  object-fit: contain;
+  background: url(../img/bioelements.jpg) no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
@@ -203,8 +217,8 @@ body {
 }
 
 .silk-wrapper {
-  background: url(../img/silk2.png) center;
-  object-fit: contain;
+  background: url(../img/silk3.png) no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
@@ -228,11 +242,19 @@ body {
 }
 
 footer {
-  height: 300px;
+  background-color: rgb(115, 13, 231);
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -267,7 +289,13 @@ footer {
     margin-bottom: 10px;
   }
 
+  .about-content p {
+    text-align: center;
+  }
+
   .work {
+    margin: 10px;
+
     grid-template-areas:
       'sol-de-janiero'
       'bioelements'
@@ -275,5 +303,19 @@ footer {
       'ike';
 
     grid-row-gap: 10px;
+  }
+
+  .sol-wrapper,
+  .bio-wrapper,
+  .silk-wrapper,
+  .ike-wrapper {
+    filter: brightness(40%);
+  }
+
+  .sol-de-janiero h1,
+  .bioelements h1,
+  .silk h1,
+  .ike h1 {
+    display: block;
   }
 }
