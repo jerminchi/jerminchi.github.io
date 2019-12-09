@@ -19,14 +19,17 @@ a:focus {
 p {
   color: #fff;
 }
-h1 {
+h1,
+h3 {
   color: #fff;
   font-weight: 700;
+  font-size: 1.3rem;
 }
 
 body {
-  background-color: rgb(243, 132, 28);
+  background-color: rgb(115, 13, 231);
   font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
 }
 
 .socials {
@@ -38,10 +41,16 @@ body {
   z-index: 100;
 }
 
-.socials > div > svg {
+.socials > div {
   color: #fff;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  align-items: center;
+  display: flex;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.socials a {
+  color: #fff;
 }
 
 .github-container,
@@ -89,7 +98,21 @@ body {
 }
 
 .about-content {
+  /* padding-right: 50px; */
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
   color: black;
+}
+
+.about-content > header,
+.about-content > div {
+  width: 50%;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  opacity: 0.7;
 }
 
 /* work section */
@@ -210,4 +233,47 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .socials {
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+  }
+
+  .intro-wrapper > h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro-wrapper > p {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-content > div,
+  .about-content > header {
+    width: 100%;
+  }
+
+  .about-content > header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .work {
+    grid-template-areas:
+      'sol-de-janiero'
+      'bioelements'
+      'silk'
+      'ike';
+
+    grid-row-gap: 10px;
+  }
 }
